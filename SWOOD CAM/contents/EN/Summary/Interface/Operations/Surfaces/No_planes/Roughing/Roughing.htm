@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Roughing</title>
+  <link rel="StyleSheet" href="../../../../../../../assets/css/SWOOD Help.css" type="text/css" />
+  <meta name="condition-tags" content="Langue:English" />
+</head>
+<body>
+  <h1><u>OPERATION</u>: ROUGHING<img align="right" height="50" src="../../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM_2020.png" style="text-align: left; line-height: 1; margin-left: 0px; margin-top: 5px; cursor: nwse-resize;" width="140" /></h1>
+  <h3>WHAT IS THE ROUGHING OPERATION?</h3>
+  <p>The &quot;<img height="20" src="../../../../../../../assets/images/swStyleBlueu_PNG_EBAUCHER_40_PNG.png" width="20" /> <b>Roughing</b>&quot; operation is an operation allowing to roughen complex shapes. It is usually followed by another operation of the machining &quot;<img height="20" src="../../../../../../../assets/images/swStyleBlueu_PNG_EUSURFACER3D_40_PNG.png" width="20" /> Volume&quot;, the operation &quot;<img height="20" src="../../../../../../../assets/images/swStyleBlueu_PNG_SURFACER3D_40_PNG.png" width="20" /> Finishing&quot;. This operation only works in tool center, without radius compensation mode.</p>
+  <p> </p>
+  <h3>SELECTION</h3>
+  <p>The &quot;Roughing&quot; operation is linked to the SolidWorks <img height="20" src="../../../../../../../assets/images/swStyleBlueu_PNG_BODY_40_PNG.png" width="20" /> Solid Body. So there are two different selection modes depending on the number of bodies the part has:</p>
+  <ul class="Disc">
+    <li><b>A single Solid Body</b>: No selection is necessary: in the SolidWorks menu bar, click on : Tools / SWOOD CAM / <img height="20" src="../../../../../../../assets/images/swStyleBlueu_PNG_EUSURFACER3D_40_PNG.png" width="20" /> 3D Milling.</li>
+    <li><b>Several Solid Bodies</b>: One body must be selected: in the FeatureManager design tree, expand the <img height="18" src="../../../../../../../assets/images/image615.png" width="20" /> Solid Bodies folder and select one, then in the SolidWorks menu bar, click on : Tools / SWOOD CAM / <img height="20" src="../../../../../../../assets/images/swStyleBlueu_PNG_EUSURFACER3D_40_PNG.png" width="20" /> 3D Milling.</li>
+  </ul>
+  <p> </p>
+  <h3>SPECIFIC PARAMETERS</h3>
+  <p><img height="20" src="../../../../../../../assets/SWOOD_RESOURCES/QUICK_STARTER/ATTENTION.svg" width="20" /> Each time a parameter of the &quot;Roughing&quot; operation is modified, it will be necessary to <img height="20" src="../../../../../../../assets/images/image618.png" width="20" /> rebuild the operation in order for the modification to be taken into account. If one of the parameters has been modified, but the operation has not been rebuilt, there will be a warning sign on the <img height="20" src="../../../../../../../assets/images/image620.png" style="cursor: nesw-resize;" width="20" /> rebuild button and on the &quot;<img height="20" src="../../../../../../../assets/images/swStyleBlueu_PNG_EBAUCHERWARNING_40_PNG.png" width="20" /> Roughing&quot; operation.</p>
+  <p> </p>
+  <h4>Approach parameters</h4>
+  <p>In the &quot;Roughing&quot; operation there is no approach to choose.</p>
+  <p> </p>
+  <h4>Tool pass parameters</h4>
+  <p>The tool pass parameters specific to the &quot;Roughing&quot; operation are path parameters:</p>
+  <ul class="Disc">
+    <li><b>Tool thickness %</b>: Overlap in percentage of tool diameter between two passes.</li>
+    <li><b>Path lead in mm</b>: Overlap in millimeters between two tool passes.</li>
+  </ul>
+  <p style="text-align: center"><img src="../../../../../../../assets/images/image616.png" /></p>
+  <p> </p>
+  <h4>Dimensional parameters</h4>
+  <p>The dimensional parameters specific to the &quot;Roughing&quot; operation are as follows:</p>
+  <p style="text-align: center"><img src="../../../../../../../assets/images/image629.png" /></p>
+  <ul class="Disc">
+    <li><b>Zmax in mm</b>: Detected by default, this is the highest point of the volume in relation to the program origin.</li>
+    <li><b>Surface extension mm</b>: Allows to create a lateral overlap of the tool around the volume body (not activated by default).</li>
+    <li><b>Approach Z value</b>: Tool clearance height value before making fast movements.</li>
+    <li><b>Vertical offset</b>: Corresponds to the quantity of material to be left vertically, which will have to be reworked by a finishing operation (in mm).</li>
+    <li><b>Horizontal offset</b>: Corresponds to the quantity of material to be left horizontally, which will have to be reworked by a finishing operation (in mm).</li>
+    <li><b>Maximum depth of passes</b>: Maximum height that the tool can machine in one pass. Used to calculate the number of passes.</li>
+    <li><b>Zmin en mm</b> : Detected by default, this is the lowest point of the volume in relation to the program origin.</li>
+  </ul>
+  <p> </p>
+  <h4>Overlap strategy</h4>
+  <ul class="Disc">
+    <li><img height="41" src="../../../../../../../assets/images/image622.png" width="41" /> Enables additional contouring during the roughing operation.</li>
+    <li><img height="41" src="../../../../../../../assets/images/image621.png" width="41" /> Disables additional contouring during the roughing operation.</li>
+  </ul>
+  <p> </p>
+  <h4>Precision</h4>
+  <p>Maximum amount of material remaining after roughing (without extra thickness).</p>
+  <ul class="Disc">
+    <li><img height="41" src="../../../../../../../assets/images/image623.png" width="41" /> Minimum precision.</li>
+    <li><img height="41" src="../../../../../../../assets/images/image624.png" width="41" /> Intermediate precision.</li>
+    <li><img height="41" src="../../../../../../../assets/images/image625.png" width="41" /> Maximum precision.</li>
+  </ul>
+  <p> </p>
+  <h4>Milling area</h4>
+  <p>Permet de choisir quel élément définira la zone d’ébauche.</p>
+  <ul class="Disc">
+    <li><img height="41" src="../../../../../../../assets/images/image626.png" width="41" /> <b>Stock</b> (by default): Takes the smallest rectangular parallelepiped enclosing the volume of the workpiece.</li>
+    <li><img height="41" src="../../../../../../../assets/images/image627.png" width="41" /> <b>Body</b>: Allows to select one of the existing Solid Bodies in the part.</li>
+    <li><img height="41" src="../../../../../../../assets/images/image628.png" width="41" /> <b>Sketch</b>: Allows to select one of the existing sketches in the part.</li>
+  </ul>
+  <p> </p>
+  <p> </p>
+</body>
+</html>

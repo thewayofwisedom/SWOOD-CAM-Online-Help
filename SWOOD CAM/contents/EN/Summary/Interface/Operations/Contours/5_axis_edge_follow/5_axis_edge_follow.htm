@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>5 axis edge follow</title>
+  <link rel="StyleSheet" href="../../../../../../assets/css/SWOOD Help.css" type="text/css" />
+  <meta name="condition-tags" content="Langue:English" />
+</head>
+<body>
+  <h1>5-AXIS EDGE FOLLOW<img align="right" height="50" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM_2020.png" style="text-align: left; line-height: 1; margin-left: 0px; margin-top: 5px; cursor: nwse-resize;" width="140" /></h1>
+  <p> </p>
+  <div class="contains" style="">
+    <p class="Signet" style="font-size: 15px;"><span style="text-decoration:underline;"><a id="Introduction"></a>Introduction</span></p>
+    <p><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px"><strong>5-axis edge follow</strong> is an operation allowing to follow a non-planar profile or a profile requiring interpolation of the 5-axis head along an edge. It is available via edge selection. This feature works only in tool center mode, without compensation mode.</span></span></p>
+    <p> </p>
+    <p class="Signet" style="font-size: 17px">Selection</p>
+    <p style="font-size: 15px">By selecting an edge, it is possible to perform <span style="font-size: 15px;"><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px"><strong>5-axis edge follow</strong></span></span></span> by clicking <img height="20" src="../../../../../../assets/images/image2.png" style="font-size: 15px;" width="14" /> on milling <img height="17" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/EU/EUF_32_PNG.png" width="17" /> and <span style="font-size: 15px;"><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px"><strong>5-axis edge follow</strong></span></span></span> after selecting a tool.</p>
+    <p style="font-size: 15px;text-align: center"><span><u><span style="color:#0000ff;"><span><u><span style="color:#0000ff;"></span></u></span></span></u></span></p>
+    <p style="font-size: 15px;text-align: left"><span style="font-size: 15px;">Once the tool and the <strong style="font-size: 15px"></strong><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px"><strong>5-axis edge follow </strong></span></span>milling operation have been selected, the operation configuration window will appear on the screen. </span></p>
+    <p style="font-size: 15px;text-align: left"><span style="font-size: 15px;">For </span>details<span style="font-size: 15px;"> on </span>the<span style="font-size: 15px;"> data </span>common to all operations<span style="font-size: 15px;">, </span>see the <a href="../../Operations.htm" style="font-size: 15px;">SWOODCAM Millings operations</a> <span style="font-size: 15px;">page.</span></p>
+    <p style="font-size: 15px; text-align: left;"> </p>
+    <p class="Signet" style="font-size: 17px">Machining parameters</p>
+    <p style="font-size: 15px; text-align: left;">Contrary to standard SWOOD CAM operations, this operation requires each parameter to be configured independently.</p>
+    <div style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+      <p style="font-size: 15px; text-align: left;"><img height="20" src="../../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="text-align: justify; cursor: nwse-resize;" width="20" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" style="text-align: justify;"><strong></strong><strong>Profile settings</strong><strong></strong></a></p>
+      <div class="droptext" data-targetname="drop-down1" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">By selecting this option, the following diagram will appear on the screen, allowing you to customise the contour path, using the selected edge as a reference. <br />
+          Because machining is edge-related, there is no material detection, so machining depths and Z approach must be indicated to prevent rapid plunge into the material.</p>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"> </p>
+        <p style="font-size: 15px; text-align: left;"><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/geometry.png" style="cursor: nesw-resize;" /></p>
+        <ol class="Decimal">
+          <li style="font-size: 15px; text-align: left;"> <strong>Approach Z value:</strong> The point at which the tool will be at milling speed. This distance is added to the machining depth starting from the selected edge.</li>
+          <li style="font-size: 15px; text-align: left;"> <strong>Maximum depth of passes:</strong> Allows the profile to be machined in several passes. The Extra tchickness total must be entered.</li>
+          <li style="font-size: 15px; text-align: left;"> <strong>Bottom exceeding (positive or negative values accepted):</strong> Tool extending distance from the selected edge.</li>
+          <li style="font-size: 15px; text-align: left;"> <strong>Extra thickness lateral (positive or negative values accepted):</strong> Allows the machining to be shifted laterally.</li>
+          <li style="font-size: 15px; text-align: left;"> <strong>Extra thickness total (to be specified manually):</strong> Indicates the height/depth of the machining  to be performed.</li>
+        </ol>
+      </div>
+      <p style="font-size: 15px; text-align: left;"><img height="21" src="../../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="text-align: justify; cursor: nwse-resize;" width="21" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" style="text-align: justify;"><strong>Appraoch and Disengagement parameters</strong></a></p>
+      <div class="droptext" data-targetname="drop-down2" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">As the machining is related to an edge, there is no material detection, so the appraoch and disengagement distances must be indicated in order to avoid any rapid movement into the material.</p>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"> </p>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/accostages.png" /></p>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"> </p>
+        <ol class="Decimal">
+          <li style="font-size: 15px; text-align: left;"> <strong>Appraoch distance:</strong> Approach distance of the tool, normal to the selected approach point.</li>
+          <li style="font-size: 15px; text-align: left;"> <strong>Length of the appraoch ramp:</strong> Length of the approach tangent to the edge.</li>
+          <li style="font-size: 15px; text-align: left;"> <strong><strong>Length of the release ramp</strong>:</strong> Length of the disengagement tangent to the edge.</li>
+          <li style="font-size: 15px; text-align: left;"> <strong>Disengagement distance:</strong> Disengagement distance of the tool, normal to the selected approach point.</li>
+        </ol>
+        <p style="font-size: 15px; text-align: left;"> </p>
+        <p style="font-size: 15px; text-align: left;"><strong>Representation in the interface:</strong></p>
+        <p style="font-size: 15px; text-align: left;">The following example groups the most important parameters.</p>
+        <p style="font-size: 15px; text-align: left;"><img height="283" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/accostages-model.png" width="500" /></p>
+        <ol class="Decimal">
+          <li style="font-size: 15px; text-align: left;"> Approach Z value</li>
+          <li style="font-size: 15px; text-align: left;"> Appraoch distance</li>
+          <li style="font-size: 15px; text-align: left;"> Length of the appraoch ramp</li>
+          <li style="font-size: 15px; text-align: left;"> Length of the release ramp</li>
+          <li style="font-size: 15px; text-align: left;"> Disengagement distance</li>
+        </ol>
+        <p style="font-size: 15px; text-align: left;"> </p>
+        <ol class="RoundSquare">
+        </ol>
+      </div>
+      <p style="font-size: 15px; text-align: left;"><img height="20" src="../../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="text-align: justify; cursor: nwse-resize;" width="20" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" style="text-align: justify;"><strong></strong><strong>Toolpaths and trajectories</strong><strong></strong></a></p>
+      <div class="droptext" data-targetname="drop-down3" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">In relation to an edge, several toolpaths can be defined according to different parameters of normals, tangents.</p>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"> </p>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u><strong><u>Tool path </u></strong>:</u></strong> A toolpath can be defined as 2 normal or 2 tangent toolpaths, detected in relation to the selected edge.</p>
+        <table border="1" cellpadding="1" cellspacing="1" style="border-collapse: collapse;width: 90%;text-align: left;margin-left: 40px">
+          <colgroup>
+            <col style="width: 63%;" />
+            <col style="width: 63%;" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <p><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Parcours1.png" /> <strong>Toolpath along Normal 1:</strong> Allows you to work with the tip of the tool, relative to the first normal detected (usually above the selected edge).</p>
+                <p> </p>
+              </td>
+              <td><img height="112" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Parcours1b.png" width="250" /></td>
+            </tr>
+            <tr>
+              <td>
+                <p><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Parcours2.png" /> <strong><strong><strong>Toolpath along Tangent 1</strong></strong>:</strong> Allows you to work with the edge of the tool, relative to the first normal detected (usually above the selected edge).</p>
+                <p> </p>
+              </td>
+              <td><img height="119" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Parcours2b.png" width="250" /></td>
+            </tr>
+            <tr>
+              <td>
+                <p><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Parcours3.png" /> <strong><strong><strong>Toolpath along Normal 2</strong></strong>:</strong> Allows you to work with the tip of the tool, relative to the second normal detected (usually below the selected edge).</p>
+                <p> </p>
+              </td>
+              <td><img height="117" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Parcours3b.png" width="250" /></td>
+            </tr>
+            <tr>
+              <td>
+                <p><img height="32" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Parcours4.png" width="32" /> <strong><strong><strong><strong><strong><strong><strong>Toolpath along Tangent</strong></strong></strong></strong></strong> 2</strong>:</strong> Allows you to work with the edge of the tool, relative to the second normal detected (usually below the selected edge).</p>
+                <p> </p>
+              </td>
+              <td><img height="109" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Parcours4b.png" width="250" /></td>
+            </tr>
+            <tr>
+              <td>
+                <p><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Parcours5.png" /> <strong><strong><strong><strong><strong><strong><strong><strong>Toolpath along median axis</strong></strong></strong></strong></strong></strong></strong>:</strong> Allows you to work on the axis between the 2 detected normals.</p>
+                <p> </p>
+                <p> </p>
+              </td>
+              <td><img height="117" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Parcours5b.png" width="250" /></td>
+            </tr>
+            <tr>
+              <td>
+                <p><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Parcours6.png" /> <strong>Z axis direction:</strong> Usable with a 3-axis machine, this mode allows you to follow a non-planar profile.</p>
+                <p> </p>
+              </td>
+              <td><img height="100" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Parcours6b.png" width="250" /></td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"> </p>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"> <strong><u><strong><u>Types of trajectories </u></strong>:</u></strong> If the selected path is following the tangeante, then it is possible to follow a path according to the normal or U / V curves.</p>
+        <table border="1" cellpadding="1" cellspacing="1" style="border-collapse: collapse;width: 90%;text-align: left;margin-left: 40px">
+          <colgroup>
+            <col style="width:50%" />
+            <col style="width:50%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <p><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/vecteur1.png" /> <strong>Toolpath along normale :</strong> Mode activated by default, the path followed is normal to the profile.</p>
+                <p> </p>
+              </td>
+              <td>
+                <p><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/normale.png" /></p>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/vecteur2.png" /> <strong><strong>Toolpath along </strong>U parameter :</strong> The trajectory is followed according to the detected U curve.</td>
+              <td><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/courbeU.png" /></td>
+            </tr>
+            <tr>
+              <td><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/vecteur3.png" /> <strong><strong><strong>Toolpath along </strong>V parameter </strong> :</strong> The trajectory is followed according to the detected V curve.</td>
+              <td><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/courbeV.png" /></td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"> It is possible to display these curves in SOLIDWORKS using the feature <img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/5X/Face_curves.png" />.</p>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"> </p>
+        <ol class="RoundSquare">
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="contains">
+    <ol>
+    </ol>
+  </div>
+  <p style="font-size: 15px; text-align: left;"> </p>
+</body>
+</html>

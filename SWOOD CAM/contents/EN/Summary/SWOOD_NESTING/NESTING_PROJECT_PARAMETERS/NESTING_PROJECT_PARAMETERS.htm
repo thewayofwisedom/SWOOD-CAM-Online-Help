@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>NESTING_PROJECT_PARAMETERS</title>
+  <link rel="StyleSheet" href="../../../../assets/css/SWOOD Help.css" type="text/css" />
+  <meta name="condition-tags" content="Langue:English" />
+</head>
+<body>
+  <h1>NESTING PROJECTS PARAMETERS<img align="right" height="50" src="../../../../assets/SWOOD_RESOURCES/SWOOD NESTING_2020.png" style="text-align: left; line-height: 1; margin-left: 0px; margin-top: 5px;" width="140" /></h1>
+  <div class="contains">
+    <justify>
+      <p style="text-align: left">The Nesting project parameters are the main parameters of the SWOOD Nesting algorithm.</p>
+      <p style="text-align: left">They are accessible in the parameters section in the <a href="../NESTING_PROJECTS_WINDOW/NESTING_PROJECT_WINDOW.htm">Nesting projects window</a> after selecting the highest level of the Nesting project, the &quot;<img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/NESTING_FILE_32_PNG.png" width="20" /> Nesting project&quot;.</p>
+      <p style="text-align: left"> </p>
+      <p style="text-align: left">Nesting&#39;s project parameters are separated into 5 categories:</p>
+      <p style="text-align: left"> </p>
+      <p style="text-align: left"><img height="20" src="../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><a id="Nesting"></a><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Nesting parameters</a></p>
+      <div class="droptext" data-targetname="drop-down" style="border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+        <p><span style="font-weight:bold;">Nesting</span> parameters are the main parameters that will affect the nesting algorithm.</p>
+        <ul class="Disc">
+          <li style="text-align: left"><span style="text-align:justify;"><span style="text-align:justify;font-size:15px"><u style="font-size: 15px"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /></u></span></span> <span style="font-weight:bold;">Rectangular nesting</span>: If this option is checked, the algorithm will create a rectangular outline around the non-rectangular nested parts to nest them as rectangles.</li>
+        </ul>
+        <p style="text-align: center"><img height="250" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/RectangularNesting.png" width="468" /></p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" width="20" /> <span style="font-weight:bold;">Sequence method</span>: The &quot;Surface&quot; method sorts the parts to be nested starting with the parts having a largest surface. The &quot;Perimeter&quot; method sorts the parts starting with the parts having a largest perimeter.</li>
+        </ul>
+        <p style="text-align: center"><img align="" height="250" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/SequenceMethod.png" width="468" /></p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/FLOAT_32_PNG.png" width="20" /> <span style="font-weight:bold;">Resolution</span>: Resolution of the shape of the part to be nested. The smaller the resolution, the higher the nesting accuracy, but the longer the computation time.</li>
+        </ul>
+        <p> </p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/DIMENSION_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Tool diameter</span>: Defines the standard tool diameter for the whole project, it will be possible to define a specific tool diameter for particular parts.</li>
+        </ul>
+        <p> </p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/DIMENSION_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Offset</span>: Also called CL, defines the extra distance between two nested parts.</li>
+        </ul>
+        <p> </p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/ANGLE_32_PNG.png" width="20" /> <span style="font-weight:bold;">Rotation step</span>: Defines each rotation step for parts to be nested. For rectangular parts, it should be set to 90°, for faster computation. The smaller the rotation step, the better the optimization of the parts for complex geometries, but the longer the computation time.</li>
+        </ul>
+        <p style="text-align: center"> <img height="250" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/RotationStep.png" width="468" /></p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" width="20" /> <span style="font-weight:bold;">Part distance type</span>: There are two distance types between parts:</li>
+        </ul>
+        <p style="text-align: left">&quot;<span style="font-weight:bold;">D1+D2+CL</span>&quot; which corresponds to the calculation of: tool diameter of the first part (D1) + tool diameter of the second part (D2) + the offset (CL). In most cases, D1 and D2 are identical.</p>
+        <p style="text-align: left">&quot;<span style="font-weight:bold;">MAX (D1, D2) + CL</span>&quot;, which corresponds to the calculation of: the largest diameter between D1 and D2 + the offset (CL). This type creates a smaller spacing between parts.</p>
+        <p style="text-align: center"><img height="150" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/PartDistanceType.png" width="476" /></p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Fit part in part</span>: If this option is checked, the algorithm will allow nesting of small parts within the inner contours of a larger part. This option allows only &quot;D1+D2+CL&quot; as part distance type.</li>
+        </ul>
+        <p style="text-align: center"> <img height="250" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/FitInPart.png" width="468" /></p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Best nesting direction</span>: If this option is checked, the algorithm compares the nesting in both directions (X or Y) and chooses the one that generates the largest rectangular scrap.</li>
+        </ul>
+        <p style="text-align: center"> <img height="250" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/BestNestingDirection.png" width="468" /></p>
+        <ul class="Disc">
+          <li><a id="Mode_de_remplissage"></a><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" width="20" /> <span style="font-weight:bold;">Fillers nesting settings</span>: For some companies, certain parts, often requested, must be produced in excess. In order to define a part to be nested as a &quot;filler part&quot;, go to the <a href="../NESTING_PROJECTS_WINDOW/NESTING_PROJECT_WINDOW.htm#Maximum_quantity">Maximum quantity</a> of a part to be nested. The options are :</li>
+        </ul>
+        <p style="text-align: justify; ">             - &quot;<b>Entire sheet</b>&quot;: -Adds &quot;fillers&quot; to the entire empty space of the board. To be chosen when you want to use the whole board.</p>
+        <p>             - &quot;<span style="font-weight:bold;">Till the nested height</span>&quot;: Adds &quot;fillers&quot; to the last part before the main scrap. To be used when you want to add &quot;fillers&quot; while keeping the main scrap to be used later.</p>
+        <p>             - &quot;<span style="font-weight:bold;">Till the nested height for last sheet only</span>&quot;: Adds &quot;fillers&quot; to the last part before the main scrap, but only on the last board, because often the last board has a very large main scrap that may be interesting to reuse later. The rest of the boards follow the &quot;Entire sheet&quot; mode.</p>
+        <p> </p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Use fillers on last sheet</span>: If this option is checked, the algorithm fills the last board of the nesting with &quot;fillers&quot; according to the chosen filling mode.</li>
+        </ul>
+        <p style="text-align: center"> <img height="400" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/FILLERS_PART.png" width="1071" /></p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/DIMENSION_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Tolerance outlines</span>: Tolerance in spline decomposition. The smaller the tolerance, the higher the accuracy of the spline, but the longer the computation time.</li>
+        </ul>
+        <p> </p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/DIMENSION_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Part thickness tolerance</span>: Allows nesting of parts with a difference in thickness compared to the thickness of the board. For example, a part of 18,9mm will be nested on a 19 mm board if the tolerance is at least of 0,1mm.</li>
+        </ul>
+        <p> </p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Ignore null thickness top/bottom</span>: If this option is checked, the algorithm only considers the main panel material when the laminate thickness is zero.</li>
+        </ul>
+        <p> </p>
+      </div>
+      <p style="text-align: left"><img height="20" src="../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><a id="Numbering"></a><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Numbering parameters</a></p>
+      <div class="droptext" data-targetname="drop-down1" style="border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+        <p>The <span style="font-weight:bold;">numbering</span> is a way to identify the parts on the boards, this numbering will be computed automatically during the nesting computation, it can be modified in the <a href="../MANUAL_NESTING/MANUAL_NESTING.htm">Manual nesting</a> and can be exported in the <a href="../../../Encode_and_Report/Copie_de_Encodage_d_un_programme.htm">report</a>.</p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" width="20" /> <span style="font-weight:bold;">Mode</span>: Defines the nesting numbering mode:</li>
+        </ul>
+        <p style="text-align: justify; ">             - &quot;<b>None</b>&quot;: No automatic numbering.</p>
+        <p>             - &quot;<span style="font-weight:bold;">Based on order</span>&quot;: Same numbering as the machining order. <span style="font-weight:bold;"><span style="color:#ff0000;">(lien à mettre)</span></span></p>
+        <p>             - &quot;<span style="font-weight:bold;">Corner/Direction</span>&quot;: The numbering starts from the chosen <a href="#Corner">corner</a> and in the chosen <a href="#Direction">direction</a>.</p>
+        <p>             - &quot;<span style="font-weight:bold;">Corner/Direction based on boards</span>&quot;: The numbering starts from the <a href="#Corner">corner</a> and the <a href="#Direction">direction</a> chosen in the <a href="../BOARDS_LIBRARY/BOARDS_LIBRARY.htm">board library</a>.</p>
+        <ul class="Disc">
+          <li><a id="Direction"></a><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" width="20" /> <span style="font-weight:bold;">Direction</span>: (Option modifiable only with the Corner/Direction mode) Direction in which the numbering is done.</li>
+        </ul>
+        <p style="text-align: center"><img height="350" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/DirectionNumbering.png" width="455" /></p>
+        <ul class="Disc">
+          <li><a id="Corner"></a><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" width="20" /> <span style="font-weight:bold;">Corner</span> : (Option modifiable only with the Corner/Direction mode) Corner of the board where the numbering starts.</li>
+        </ul>
+        <p> </p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/DIMENSION_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Tolerance</span> : Defines the tolerance in the part detection according to the direction and the chosen corner.</li>
+        </ul>
+        <p style="text-align: center"> <img height="600" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/ToleranceNumbering.png" width="459" /></p>
+        <p style="text-align: left"> </p>
+      </div>
+      <p style="text-align: left"><img height="20" src="../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><a id="Labeling"></a><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Labeling parameters</a></p>
+      <div class="droptext" data-targetname="drop-down2" style="border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08);text-align: left">
+        <p><span style="font-weight:bold;">Labeling</span> parameters allow CNC owners with automatic label positioning systems to edit, view and reposition the labels for each part directly in the nesting window.<br /></p>
+        <p style="text-align: center"> <img height="400" src="../../../../assets/images/image344.png" width="422" /></p>
+        <p> </p>
+        <table align="center" class="GridTable2-Accent41" style="border-collapse:collapse; border:none; margin-left:9px; margin-right:9px" width="605">
+          <tbody>
+            <tr>
+              <td style="border-bottom:1px solid #ffd966; width:151px; padding:0cm 7px 0cm 7px; height:9px; background-color:#fff2cc; border-top:2px solid #ffd966; border-right:1px solid #ffd966; border-left:none">
+                <p align="center" class="MsoNoSpacing" style="margin-left:-7px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="font-family:Eurostile,sans-serif"><i><span lang="EN-US" style="color:black">Parameter</span></i><i></i></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:236px; padding:0cm 7px 0cm 7px; height:9px; background-color:#fff2cc; border-top:2px solid #ffd966; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" class="MsoNoSpacing" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="font-family:Eurostile,sans-serif"><i><span lang="EN-US" style="color:black">Description</span></i><i></i></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:217px; padding:0cm 7px 0cm 7px; height:9px; background-color:#fff2cc; border-top:2px solid #ffd966; border-right:none; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" class="MsoNoSpacing" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="font-family:Eurostile,sans-serif"><i><span lang="EN-US" style="color:black">Options</span></i><i></i></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+            </tr>
+            <tr>
+              <td style="border-bottom:1px solid #ffd966; width:151px; padding:0cm 7px 0cm 7px; height:9px; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p><span style="text-align:left;"><span style="font-size: 15px;"><u style="font-size: 15px"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /></u></span> Enable</span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:236px; padding:0cm 7px 0cm 7px; height:9px; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="line-height:115%">Activate the label function in the Nesting result</span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:217px; padding:0cm 7px 0cm 7px; height:9px; border-top:none; border-right:none; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Eurostile,sans-serif"><i><span lang="EN-US" style="line-height:115%"><img src="../../../../assets/images/swStyleBlueu_PNG_BOOLEAN_OFF_20_PNG.png" />Desable</span></i><span lang="EN-US" style="line-height:115%"> /<span style="font-size: 15px;"><u style="font-size: 15px"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /></u></span></span> <i>Enable</i><span lang="EN-US" style="line-height:115%"></span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+            </tr>
+            <tr>
+              <td style="border-bottom:1px solid #ffd966; width:151px; padding:0cm 7px 0cm 7px; height:9px; background-color:#fff2cc; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="left" style="text-align:left"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="color:black"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" width="20" /> Label Position</span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:236px; padding:0cm 7px 0cm 7px; height:9px; background-color:#fff2cc; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="line-height:115%"><span style="color:black">Corner of each part in which the label is placed</span></span><span lang="EN-US" style="line-height:115%"></span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:217px; padding:0cm 7px 0cm 7px; height:9px; background-color:#fff2cc; border-top:none; border-right:none; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="line-height:115%"><span style="color:black">Bottom Left / Bottom Right / Center / Top Left / Top Right</span></span><span lang="EN-US" style="line-height:115%"></span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+            </tr>
+            <tr>
+              <td style="border-bottom:1px solid #ffd966; width:151px; padding:0cm 7px 0cm 7px; height:9px; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="left" style="text-align:left"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/DIMENSION_32_PNG.png" style="font-size: 15px;" width="20" /> Label Length</span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:236px; padding:0cm 7px 0cm 7px; height:9px; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="line-height:115%">Defines the label length</span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:217px; padding:0cm 7px 0cm 7px; height:9px; border-top:none; border-right:none; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Eurostile,sans-serif"><i><span lang="EN-US" style="line-height:115%">Dimension</span></i></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+            </tr>
+            <tr>
+              <td style="border-bottom:1px solid #ffd966; width:151px; padding:0cm 7px 0cm 7px; height:9px; background-color:#fff2cc; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="left" style="text-align:left"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="color:black"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/DIMENSION_32_PNG.png" style="font-size: 15px;" width="20" /> Label Width</span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966;width:236px;padding:0cm 7px 0cm 7px;height:9px;background-color:#fff2cc;border-top:none;border-right:1px solid #ffd966;border-left:none;text-align:center"><span style="text-align:left;">Defines the label width</span></td>
+              <td style="border-bottom:1px solid #ffd966; width:217px; padding:0cm 7px 0cm 7px; height:9px; background-color:#fff2cc; border-top:none; border-right:none; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Eurostile,sans-serif"><i><span lang="EN-US" style="line-height:115%"><span style="color:black">Dimension</span></span></i><span lang="EN-US" style="line-height:115%"></span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+            </tr>
+            <tr>
+              <td style="border-bottom:1px solid #ffd966; width:151px; padding:0cm 7px 0cm 7px; height:9px; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="left" style="text-align:left"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/DIMENSION_32_PNG.png" style="font-size: 15px;" width="20" /> Offset</span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:236px; padding:0cm 7px 0cm 7px; height:9px; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="line-height:115%">Defines the label&#39;s offset from all the part&#39;s contours</span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:217px; padding:0cm 7px 0cm 7px; height:9px; border-top:none; border-right:none; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Eurostile,sans-serif"><i><span lang="EN-US" style="line-height:115%">Dimension</span></i><span lang="EN-US" style="line-height:115%"></span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+            </tr>
+            <tr>
+              <td style="border-bottom:1px solid #ffd966; width:151px; padding:0cm 7px 0cm 7px; height:9px; background-color:#fff2cc; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="left" style="text-align:left"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="color:black"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="color:black"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" width="20" /></span></span></span></span> Referential</span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:236px; padding:0cm 7px 0cm 7px; height:9px; background-color:#fff2cc; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><i><span lang="EN-US" style="color:black">Determined by part</span></i><span lang="EN-US" style="color:black">: Follows the orientation of the part</span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><i><span lang="EN-US" style="color:black">Determined by sheet</span></i><span lang="EN-US" style="color:black">: Always oriented like the board</span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:217px; padding:0cm 7px 0cm 7px; height:9px; background-color:#fff2cc; border-top:none; border-right:none; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="color:black">Determined by part / Determined by sheet</span></span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+            </tr>
+            <tr>
+              <td style="border-bottom:1px solid #ffd966; width:151px; padding:0cm 7px 0cm 7px; height:9px; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="left" style="text-align:left"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="color:black"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" width="20" /></span></span></span></span> Label Rotation</span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:236px; padding:0cm 7px 0cm 7px; height:9px; border-top:none; border-right:1px solid #ffd966; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif">Defines the label orientation according to the referential</span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+              <td style="border-bottom:1px solid #ffd966; width:217px; padding:0cm 7px 0cm 7px; height:9px; border-top:none; border-right:none; border-left:none"><span style="text-align:left;"> </span>
+                <p align="center" style="margin-left:-6px; text-align:center"><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif">0° / 90° / 180° / 270°</span></span></span></span></p>
+                <span style="text-align:left;"> </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p> <img src="../../../../assets/images/image274.png" style="cursor: nwse-resize;" /> <span style="font-style:italic;"><span style="text-decoration:underline;">Tip</span>: It is possible to change all the default label parameters. To do so, please contact your SWOOD reseller.</span></p>
+        <p> </p>
+      </div>
+      <p style="text-align: left"><img height="20" src="../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><a id="Strategy"></a><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Strategy parameters</a></p>
+      <div class="droptext" data-targetname="drop-down4" style="border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+        <p><span style="font-weight:bold;">Strategy</span> parameters are used to improve the holding of the parts on the nesting boards as much as possible.</p>
+        <p>It is directly linked to the <img height="20" src="../../../../assets/images/swStyleBlueu_PNG_TYPESOFPARTSLIB_20_PNG1.png" width="20" /> <a href="../PARTS_TYPE/PARTS_TYPE.htm">Part Type Configuration</a>.</p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Optimal holding</span>: Activates the part holding function.</li>
+        </ul>
+        <p> </p>
+        <ul class="Disc">
+          <li><span style="text-align:left;"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="color:black"><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Eurostile,sans-serif"><span lang="EN-US" style="color:black"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" width="20" /></span></span></span></span></span></span></span></span></span> <span style="font-weight:bold;">Part types</span>: (Option modifiable only when the Optimal holding is activated) Possibility to select one of the part types strategies saved in the <img height="20" src="../../../../assets/images/swStyleBlueu_PNG_TYPESOFPARTSLIB_20_PNG1.png" width="20" /> <a href="../PARTS_TYPE/PARTS_TYPE.htm">Part Type configuration</a> window.</li>
+        </ul>
+        <p> </p>
+      </div>
+      <p style="text-align: left"><img height="20" src="../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><a id="CAM"></a><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Machining parameters</a></p>
+      <div class="droptext" data-targetname="drop-down5" style="border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+        <p>The <span style="font-weight:bold;">Machining</span> parameters allow you to apply machining settings even before the machining phase is created.</p>
+        <ul class="Disc">
+          <li><img src="../../../../assets/images/swStyleBlueu_PNG_INTEGER_20_PNG.png" /> <span style="font-weight:bold;">Quantity</span>: Number of copies of nesting assemblies.</li>
+        </ul>
+        <p> </p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" width="20" /> <span style="font-weight:bold;">Milling order</span>: Defines the <img src="../../../../assets/images/swStyleBlueu_PNG_MODE_ORDER_20_PNG1.png" style="cursor: nwse-resize;" />milling order of the nesting project, the three options of this parameter are :</li>
+        </ul>
+        <p style="text-align: left">             - &quot;<span style="font-weight:bold;">None</span>&quot;: The milling order is not generated.</p>
+        <p style="text-align: left">             - &quot;<span style="font-weight:bold;">Near</span>&quot;: The milling order is generated from one part to the closest part to the previous one.</p>
+        <p style="text-align: left">             - &quot;<span style="font-weight:bold;">Surface</span>&quot;: The milling order is generated from the part with the largest surface to the part with the smallest surface.</p>
+        <p style="text-align: center"><img height="250" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MillingOrder.png" width="468" /></p>
+        <p style="text-align: left">This order can be changed in the <a href="../MANUAL_NESTING/MANUAL_NESTING.htm">Manual nesting window</a>.</p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" width="20" /> <span style="font-weight:bold;">Default CN</span>: Sets the default machine (post-processor) used in SWOOD CAM.</li>
+        </ul>
+        <p> </p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Enable automatic machining insertion</span>: Automatically inserts machining operations (defined in the <a href="../AUTOMATIC_MACHINING_INSERTION/AUTOMATIC_MACHINING_INSERTION.htm">Automatic machining library</a>) in the milling phase of the nesting result.</li>
+        </ul>
+        <p> </p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">One program for same sheets</span>: Generates only one Nesting assembly for sheets that have exactly the same part layout. In front of the machine, the operator will have to restart the program as many times as the quantity to produce.</li>
+        </ul>
+        <p> </p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Insert not nested parts</span>: Integrates non-nested parts (due to an error), in red, into Nesting assemblies without integrating them on the Nesting board.</li>
+        </ul>
+        <p> </p>
+        <ul class="Disc">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /> <span style="font-weight:bold;">Lead in/out on the middle of the longest edge</span>: Place the beginning and end of the outline of each part in the middle of its longest edge.</li>
+        </ul>
+        <p> </p>
+      </div>
+      <p> </p>
+      <p style="text-align: left"><span style="font-weight:bold;text-decoration:underline">Tooltip</span></p>
+      <p style="text-align: left">Tooltips are accessible when hovering over Nesting parameters, they give additional information about these parameters.</p>
+      <p style="text-align: left"><img src="../../../../assets/images/image282.png" /></p>
+      <p style="text-align: left"> </p>
+      <p style="text-align: left"> </p>
+    </justify>
+    <ol>
+    </ol>
+  </div>
+</body>
+</html>

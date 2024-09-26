@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>POSITIONING RULES</title>
+  <link rel="StyleSheet" href="../../../../assets/css/SWOOD Help.css" type="text/css" />
+  <meta name="condition-tags" content="Langue:English" />
+  <meta http-equiv="Content-Language" content="en-UK" />
+  <meta name="topic-status" content="Terminé" />
+</head>
+<body>
+  <h1>POSITIONING RULES<img align="right" height="50" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM_2020.png" style="text-align: left; line-height: 1; margin-left: 0px; margin-top: 5px;" width="140" /></h1>
+  <p> </p>
+  <div class="contains" style="">
+    <p class="Signet"><u><a id="Introduction"></a>Introduction</u></p>
+    <p>SWOOD CAM&#39;s positioning rules can be defined to be used and allow the automatic positioning of a part according to certain criteria.</p>
+    <p> </p>
+    <p class="Signet"><a id="Library_Configuration"></a>Library configuration</p>
+    <ol class="RoundSquare">
+      <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/Others/NEW/NEW_32_PNG.png" width="20" /> Allows you to create a new positioning rule.</li>
+      <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/Others/SAVE/SAVE_32_PNG.png" width="20" /> Allows you to save changes made to the positioning rules.</li>
+      <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/Others/DELETE_32_PNG.png" width="20" /> Allows you to delete the selected positioning rules.</li>
+    </ol>
+    <p>Click on a positioning rule to display the following parameters:</p>
+    <ol class="RoundSquare">
+      <li><u><strong>Generalities</strong></u>
+        <ol>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/STRING_32_PNG.png" width="20" /> <strong><u>Name:</u></strong><u></u> Designation of the positioning rule.</li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/STRING_32_PNG.png" width="20" /> <strong><u>Description:</u></strong><u></u> Description of the positioning rule.</li>
+        </ol>
+      </li>
+    </ol>
+    <p> </p>
+    <ol class="RoundSquare">
+      <li><strong><u>Positioning Criteria</u></strong>
+        <ol>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" style="font-size: 15px;" width="20" /> <b><u>Body selection:</u></b><u></u> Allows you to choose a reference body that will be used as a template to apply the rule.
+            <ol>
+              <li><strong><u>Biggest body:</u></strong> Automatically chooses the application body to the ruler. The choice of the body will be grayed out and managed automatically.</li>
+              <li><strong><u>User selection:</u></strong> Allows you to manually choose the volume body on which to apply the positioning rule.</li>
+            </ol>
+          </li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" style="font-size: 15px;" width="20" /> <strong><u>X choice:</u></strong> Sets the orientation of the X-axis on the panel.
+            <ol class="RoundSquare">
+              <li><strong><u>Minimize panel width:</u></strong> Sets the Z-axis to the smallest dimension of the panel, and by default sets the X-axis to the length of the panel.</li>
+              <li><strong><u>Longest groove:</u></strong> Sets the X-axis in the direction of the largest groove in the panel.<br />
+                <br />
+                If this option is selected, <strong>groove recognition options</strong> will be visible.
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+    <p> </p>
+    <ol class="RoundSquare">
+      <li><strong><u>Groove recognition parameters</u></strong> (only available when &quot;X choice&quot; is set to &quot;<strong>Longest groove</strong>&quot;)
+        <ol>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/DIMENSION_32_PNG.png" width="20" /> <strong><u>Min length:</u></strong> Minimum groove length to be taken into account by the positioning rule in mm.</li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/DIMENSION_32_PNG.png" width="20" /> <strong><u>Max thickness:</u></strong> Maximum panel thickness supported by the detection algorithm in mm.</li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/STRING_32_PNG.png" width="20" /> <strong><u>If no recognized groove:</u></strong> Behavior if no groove is recognized. This is an informative parameter that cannot be modified, always set to &quot;<strong>Minimize panel width</strong>&quot;.</li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" style="font-size: 15px;" width="20" /> <strong><u>Groove Orientation:</u></strong> Defines the groove to be recognized for positioning and groove orientation.
+            <ol>
+              <li><strong><u>Indifferent:</u></strong> The groove will have no impact on positioning.</li>
+              <li><strong><u>Downwards:</u></strong> The longest groove is positioned <strong>at the bottom</strong> of the panel in relation to the origin.</li>
+              <li><strong><u>Upwards:</u></strong> The longest groove is positioned <strong>at the top</strong> of the panel in relation to the origin.</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+    <p> </p>
+    <p> </p>
+  </div>
+</body>
+</html>

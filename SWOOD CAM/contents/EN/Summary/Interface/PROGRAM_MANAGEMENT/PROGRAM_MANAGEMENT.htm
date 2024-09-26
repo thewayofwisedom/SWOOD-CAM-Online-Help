@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>PROGRAM MANAGEMENT</title>
+  <link rel="StyleSheet" href="../../../../assets/css/SWOOD Help.css" type="text/css" />
+  <meta name="condition-tags" content="Langue:English" />
+  <meta http-equiv="Content-Language" content="en-UK" />
+  <meta name="topic-status" content="Terminé" />
+</head>
+<body>
+  <h1>PROGRAM SETTINGS<img align="right" height="50" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM_2020.png" style="text-align: left; line-height: 1; margin-left: 0px; margin-top: 5px; cursor: nwse-resize;" width="140" /></h1>
+  <div class="contains" style="">
+    <h3><a id="Introduction"></a>WHAT IS PROGRAM SETTINGS?</h3>
+    <p><img height="20" src="../../../../assets/images/swStyleBlueu_PNG_EFICAD_32_PNG.png" width="20" /> Phase management is used to create one or more milling phases (programs) on a SolidWorks part or assembly. This allows to define the targeted machine, as well as specific global machining parameters.</p>
+    <p> </p>
+    <h3>ACCESS THE PROGRAM SETTINGS WINDOW</h3>
+    <p>There are several ways to access the program settings window:</p>
+    <ul class="Disc">
+      <li>From the menu bar: Go to Tools / SWOOD CAM / <img height="20" src="../../../../assets/images/swStyleBlueu_PNG_EFICAD_32_PNG.png" width="20" /> Program settings.</li>
+      <li>From the SWOOD CAM CommandManager: Click on <img height="20" src="../../../../assets/images/swStyleBlueu_PNG_EFICAD_32_PNG.png" width="20" /> Program settings button.</li>
+      <li>from the SWOOD CAM toolbar: Click on <img height="20" src="../../../../assets/images/swStyleBlueu_PNG_EFICAD_32_PNG.png" width="20" /> Program settings button.</li>
+    </ul>
+    <p> </p>
+    <h3>INTERFACE</h3>
+    <p>The Program settings window is divided into 2 sections:</p>
+    <p style="text-align: center"><img height="268" src="../../../../assets/images/Gestion_phases_EN1.png" width="600" /></p>
+    <ul class="Disc">
+      <li>The <a href="#Phase_list">Phase_list</a>.</li>
+      <li>The <a href="#Parameter_section">Parameters section</a>.</li>
+    </ul>
+    <p> </p>
+    <h3>Sections</h3>
+    <h4><a id="Phase_list" style="cursor: nwse-resize;"></a>Phase list</h4>
+    <p><b><u style="margin-left: 28px">Milling phase creation:</u></b> Above the phase list, there is a <img height="20" src="../../../../assets/images/swStyleBlueu_PNG_ADDPHASE_3_32_PNG.png" style="cursor: nesw-resize;" width="20" /> button for creating a new milling phase.</p>
+    <p style="text-align: justify; "><b><u style="margin-left: 28px">Milling sequence:</u></b> It is possible to rearrange the order of milling phases in the list. To do this, select a phase in the list, then click on the <img height="20" src="../../../../assets/SWOOD_RESOURCES/Others/ARROW/UP_32_PNG.png" width="20" /> up arrow to move the phase up, or on the <img height="20" src="../../../../assets/SWOOD_RESOURCES/Others/ARROW/DOWN_32_PNG.png" width="20" /> down arrow to move it down.</p>
+    <p> </p>
+    <h4><a id="Parameter_section"></a>Parameters section</h4>
+    <p>The parameters section consists of several tabs: <b>Machine</b>, <b>Information</b>, <b>Nesting</b> and <b>Feed/Grain correction</b>.</p>
+    <ol class="RoundSquare">
+      <li><u>Machine:</u> Defines parameters related to the program to be coded and the machine.
+        <ul class="Circle">
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/STRING_32_PNG.png" width="20" /> <strong><u>Name:</u></strong> Defines the name of the milling phase as it will appear in SWOOD CAM&#39;s FeatureManager.</li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/STRING_32_PNG.png" width="20" /> <strong><u>Program numben:</u></strong> Defines the program number as it will appear in the coded program (useful for some post-processors).</li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <strong><u>Machine:</u></strong> Selects the post-processor that will be used to encode the program. The list depends on the post-processors installed in the SWOODData &quot;PostProcessors&quot; folder.</li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <strong><u>Report settings:</u></strong> Options when the program is encoded from the SWOOD report. 
+            <ul>
+              <li><strong><u>No machining to encode alert:</u></strong> Select how to warn when a program contains no machining. <img height="20" src="../../../../assets/SWOOD_RESOURCES/QUICK_STARTER/ATTENTION.svg" width="20" /> The &quot;<a href="../SWOOD_Options/SWOOD_Options.htm#show_report_errors">Show Report Errors during generation</a>&quot; option must be checked in SWOOD CAM Options.
+                <ul>
+                  <li><strong><u>None:</u></strong> In this case, when a report is generated, there are no errors either during or after generation.</li>
+                  <li><strong><u>Error:</u></strong> In this case, when a report is generated, there is an error on the loading bar during generation. There are several errors after generation: in the general variables, and in the part program.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ol>
+    <p> </p>
+    <ol class="RoundSquare">
+      <li><u>Information:</u> Defines additional (optional) parameters adding information to the program. 
+        <ul class="Circle">
+          <li><strong><u>Operater:</u></strong> Operator name.</li>
+          <li><strong><u>Assembly:</u></strong> Assembly or project name.</li>
+          <li><strong><u>Part:</u></strong> Part name.</li>
+          <li><strong><u>Reference:</u></strong> Part reference.</li>
+          <li><strong><u>Number of parts:</u></strong> Number of identical parts.</li>
+          <li><strong><u>Comment:</u></strong> Additional comments on the part.</li>
+        </ul>
+      </li>
+    </ol>
+    <p> </p>
+    <ul class="Disc">
+      <li><u>Nesting:</u> Defines some useful parameters when the part is used in a Nesting assembly.
+        <ul>
+          <li><strong><u>Nested Part:</u></strong> Defines the current milling phase as the default phase to be brought up in the nesting program.</li>
+          <li><strong><u>Tool diameter:</u></strong> Defines a custom tool diameter for nesting this part. Enables correct calculation of spacing between adjacent parts.</li>
+        </ul>
+      </li>
+    </ul>
+    <p> </p>
+    <ul class="Disc">
+      <li><u>Feed/Grain correction:</u> Defines additional parameters when the part has a grain direction.
+        <ul>
+          <li><img height="20" src="../../../../assets/images/swStyleBlueu_PNG_SDPANEL_32_PNG.png" width="19" /> <strong><u>From SWOOD Design:</u></strong> Loads grain parameters from SWOOD Design material and applies speed corrections defined in the material.</li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/BOOLEAN_32_PNG.png" style="font-size: 15px;" width="20" /> <strong><u>Correction enabled:</u></strong> Enables or disables correction of machining speeds according to machining direction.</li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SOLIDWORKS/APPEARANCE_32_PNG.png" width="20" /> <strong><u>Material:</u></strong> SOLIDWORKS material applied to the panel.</li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM/PHASE/GRAINCORRECTION_32_PNG.png" width="20" /> <strong><u>Predefined settings:</u></strong> Allows to create or load correction angle and correction factor parameters. By hovering the mouse over the area adjacent to the parameter name, it is possible to:
+            <ol class="RoundSquare">
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Click on the grey area next to the parameter, or on to <img src="../../../../assets/images/swStyleBlueu_PNG_SELECT_16_PNG.png" /> choose from the predefined created parameters.</li>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">By clicking on <b>Edit</b> <img height="20" src="../../../../assets/SWOOD_RESOURCES/Others/EDIT_32_PNG.png" width="20" />, the Feed/Grain correction Library window appears, allowing to add additional correction configurations to the list:
+                <ol>
+                  <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="20" src="../../../../assets/SWOOD_RESOURCES/Others/NEW/NEW_32_PNG.png" style="font-size: 15px;" width="20" /> Allows to create a new correction configuration.</li>
+                  <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="20" src="../../../../assets/SWOOD_RESOURCES/Others/DELETE_32_PNG.png" style="font-size: 15px;" width="20" /> Allows to delete the selected configuration.</li>
+                  <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="20" src="../../../../assets/SWOOD_RESOURCES/Others/COPY_32_PNG.png" style="font-size: 15px;" width="20" /> Allows to create a copy of the selected configuration.<br />
+                    You can set the following parameters:
+                    <ol>
+                      <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u>Name:</u></strong><u></u> Configuration name.</li>
+                      <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u>Factor:</u></strong><u></u> Speed correction factor.</li>
+                      <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u>Angle:</u></strong><u></u> Angle between grain direction and feed direction from which correction will be applied.</li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/ANGLE_32_PNG.png" width="20" /> <strong><u>Correction angle:</u></strong> Angle between grain direction and feed direction from which correction will be applied.</li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/Others/PERCENT_32_PNG.png" width="20" /> <strong><u><strong><u>Correction f</u></strong>actor:</u></strong> Speed correction factor when machining enters the corrected zone.</li>
+          <li><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM/PHASE/DOUBLEDIRECTION_32_PNG.png" width="20" /> <strong><u>Grain direction:</u></strong> Defines the direction of the panel grain. By clicking on the area adjacent to the parameter, it is possible to:
+            <ul>
+              <li>The <img height="16" src="../../../../assets/images/image656.png" width="39" /> tab lets you define angles manually, by entering angles around the <b>X</b>, <b>Y</b> and <b>Z</b> axes, or by defining an <b>Alpha</b> and <b>Beta</b> angle, which correspond to rotation around the Z and Y axes respectively.</li>
+              <li>The <img src="../../../../assets/images/swStyleBlueu_PNG_SELECT_16_PNG.png" /> tab lets you define a custom fiber direction using the SolidWorks model. You can select an edge, a sketch line, a face or a plane.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p style="border-width: 1px 0px 0px;border-top-style: none;border-top-color: rgb(0, 0, 0);border-left-style: initial;border-left-color: initial;border-right-style: initial;border-right-color: initial;border-bottom-style: initial;border-bottom-color: initial;line-height: 1.15;text-align: justify;font-size: 15px;margin-left: 120px">Please note that the grain direction will be:</p>
+    <ul style="margin-left: 120px;">
+      <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Depending on the direction of the edge or sketch line.</li>
+      <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Normal to the selected plane or face.</li>
+    </ul>
+    <p> </p>
+    <p> </p>
+  </div>
+</body>
+</html>

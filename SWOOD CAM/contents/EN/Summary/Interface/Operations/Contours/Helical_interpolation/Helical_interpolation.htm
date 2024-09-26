@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Helical interpolation</title>
+  <link rel="StyleSheet" href="../../../../../../assets/css/SWOOD Help.css" type="text/css" />
+  <meta name="condition-tags" content="Langue:English" />
+</head>
+<body>
+  <h1>HELICAL INTERPOLATION<img align="right" height="50" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM_2020.png" style="text-align: left; line-height: 1; margin-left: 0px; margin-top: 5px; cursor: nwse-resize;" width="140" /></h1>
+  <p> </p>
+  <div class="contains" style="">
+    <p class="Signet" style="font-size: 15px;"><span style="text-decoration:underline;"><a id="Introduction"></a>Introduction</span></p>
+    <p><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px">The <strong>Helical Interpolation</strong> operation allows the selected profiles to be bypassed with a constant Z-axis descent. It can be used to process cylindrical profiles, whether internal or external.</span></span></p>
+    <p> </p>
+    <p class="Signet" style="font-size: 17px">Selection</p>
+    <p style="font-size: 15px"><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px">It is available via side face selection (parallel to the programme Z-axis) cylindrical only.</span></span></p>
+    <p style="font-size: 15px;text-align: left">Once the tool and the <strong style="font-size: 15px"></strong><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px"><strong>Helical Interpolation </strong></span></span>milling operation have been selected, the operation configuration window will appear on the screen. </p>
+    <p style="text-align: left;"><span style="font-size: 15px;">For </span>details<span style="font-size: 15px;"> on </span>the<span style="font-size: 15px;"> data </span>common to all operations<span style="font-size: 15px;">, </span>see the <a href="../../Operations.htm" style="font-size: 15px;">SWOODCAM Millings operations</a> <span style="font-size: 15px;">page.</span></p>
+    <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="20" src="../../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nesw-resize;" width="20" /><img height="30" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/BLIND_Profile.png" style="cursor: nesw-resize;" width="31" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down14" style="font-size: 15px">Blind profiles :</a></span></u></span></u></p>
+    <div class="droptext" data-targetname="drop-down14" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/HELICAL_INTERPOLATION_BLIND.png" /></p>
+      <ol class="Decimal">
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Approach Z value</li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Maximum depth of passes</li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Bottom oversize (positive or negative values accepted)</li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Extra thickness lateral (positive or negative values accepted)</li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Extra thickness total</li>
+      </ol>
+    </div>
+    <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="20" src="../../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nesw-resize;" width="20" /><img height="30" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/THROUGH_ALL_Profile.png" width="30" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down15" style="font-size: 15px">Through-all profiles :</a></span></u></span></u></span></u></p>
+    <div class="droptext" data-targetname="drop-down15" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/HELICAL_INTERPOLATION_THROUGH.png" /></p>
+      <ol class="Decimal">
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Approach Z value</li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Maximum depth of passes</li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Bottom exceeding (positive or negative values accepted)</li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Extra thickness lateral (positive or negative values accepted)</li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Extra thickness total</li>
+      </ol>
+    </div>
+    <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">An additional approach parameter is available in this operation for lead-in :</p>
+    <ol class="RoundSquare">
+      <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/INSIDE_WITH_GAP.png" width="30" /> Inside with an approach value</li>
+      <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/INSIDE_CENTERED.png" width="30" /> Inside centred</li>
+      <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/OUTSIDE.png" width="31" /> Outside with an approach value</li>
+    </ol>
+    <p style="font-size: 15px; text-align: left;"><strong><u>Extension to the raw :</u></strong> Automatically detects the height of the profile to be processed up to the raw part. If activated, parameter 5 (Height to be processed) will no longer be displayed.</p>
+    <ol class="RoundSquare">
+      <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAW_EXTENSION_OFF.png" width="30" /> Extension to raw deactivated</li>
+      <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAW_EXTENSION_TOP.png" width="30" /> Raw extension over the profile</li>
+      <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAW_EXTENSION_BOTTOM.png" width="30" /> Raw extension under the profile</li>
+      <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAW_EXTENSION_BOTH_SIDES.png" width="30" /> Raw extension over and under the profile</li>
+    </ol>
+    <p style="font-size: 15px; text-align: left;"> </p>
+  </div>
+  <div class="contains">
+    <ol>
+    </ol>
+  </div>
+  <p>For the creation of an automatic operation, see the section <a href="../../Automatic_operations/Automatic_operations.htm">Automatic Millings</a>. </p>
+</body>
+</html>

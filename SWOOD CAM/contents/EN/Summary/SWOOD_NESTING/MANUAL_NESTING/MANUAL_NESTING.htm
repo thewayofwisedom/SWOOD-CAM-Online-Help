@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>MANUAL_NESTING</title>
+  <link rel="StyleSheet" href="../../../../assets/css/SWOOD Help.css" type="text/css" />
+  <meta name="condition-tags" content="Langue:English" />
+</head>
+<body>
+  <h1>MANUAL NESTING<img align="right" height="50" src="../../../../assets/SWOOD_RESOURCES/SWOOD NESTING_2020.png" style="text-align: left; line-height: 1; margin-left: 0px; margin-top: 5px;" width="140" /></h1>
+  <div class="contains">
+    <justify>
+      <p style="text-align: left"><span style="font-weight:bold;">Manual Nesting</span> (or the Nesting Editor) can be reached by clicking on the <img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/EDITNESTING_32_PNG.png" width="20" /> Manual Nesting button on the toolbar of the <a href="../NESTING_PROJECTS_WINDOW/NESTING_PROJECT_WINDOW.htm">Nesting Projects Window</a>.</p>
+      <p style="text-align: left">Manual Nesting allows to manually modify the nesting result computed by the SWOOD Nesting algorithm.</p>
+      <p style="text-align: left">The manual Nesting window is composed of 3 main sections, 4 tools and 2 options:</p>
+      <p style="text-align: center"><img src="../../../../assets/images/image303.png" /></p>
+      <p style="text-align: left"> </p>
+      <p style="text-align: left"> </p>
+      <h3 style="text-align: left; text-decoration: underline;"><span style="font-size:20px;">Toolbar:</span></h3>
+      <ul class="Disc">
+        <li style="text-align: left;"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_MOVE_32_PNG.png" width="20" /> <span style="font-weight:bold;">Moving mode</span>: Allows to manually move the position of each part on the Nesting board.</li>
+        <li style="text-align: left;"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ORDER_32_PNG.png" width="20" /> <span style="font-weight:bold;">Ordering mode</span>: Allows to manually modify the machining order on the Nesting board.</li>
+        <li style="text-align: justify;"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ATTACH_32_PNG.png" width="20" /> <span style="font-weight:bold;">Bridge mode</span>: Allows to manually add bridges between parts.</li>
+        <li style="text-align: left;"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ORDER_REPORT_32_PNG.png" width="20" /> <span style="font-weight:bold;">Numbering</span>: Allows to manually modify the numbering of the parts on the Nesting board.</li>
+      </ul>
+      <p style="text-align: center;"> </p>
+      <p style="text-align: left"> </p>
+      <h3 style="text-align: left;"><u>Options:</u></h3>
+      <ul class="Disc">
+        <li style="text-align: left;"><span style="font-weight:bold;"><img src="../../../../assets/images/swStyleBlueu_PNG_COLOR_20_PNG1.png" /> Colors:</span></li>
+      </ul>
+      <p style="text-align: left">          Shows the correlation between the displayed colors and the name of the associated source files.</p>
+      <ul class="Disc">
+        <li style="text-align: left;"><strong><a id="Manual_nesting_options_:_"></a><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTIONS_32_PNG.png" width="20" /> Options:</strong>
+          <ul>
+            <li style="text-align: left;">Options: 
+              <ul>
+                <li style="text-align: left;"><img height="20" src="../../../../assets/images/Images/BOOLEAN.png" width="20" /> <span style="font-weight:bold;">Display parts name</span>: Displays the part names on the Graphics Area of the manual nesting.</li>
+                <li style="text-align: left;"><a id="Rotation_Step"></a><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/ANGLE_32_PNG.png" width="20" /> <span style="font-weight:bold;">Rotation step</span>: Defines the angle at which the part will rotate when the &quot;<img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/STRING_32_PNG.png" width="20" />Part rotation&quot; shortcut is activated.</li>
+              </ul>
+            </li>
+            <li style="text-align: left;">Shortcuts:
+              <ul>
+                <li style="text-align: left;"><img src="../../../../assets/images/swStyleBlueu_PNG_STRING_20_PNG1.png" /> <span style="font-weight:bold;">Part rotation</span>: (By default &quot;R&quot;). Can be used in the &quot;<img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_MOVE_32_PNG.png" width="20" /> <a href="#mode_edition_deplacer_pieces">Moving mode</a>&quot; editing mode to rotate a part by the <img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/ANGLE_32_PNG.png" width="20" />rotation step. By default &quot;R&quot;.</li>
+                <li style="text-align: left;"><img src="../../../../assets/images/swStyleBlueu_PNG_STRING_20_PNG1.png" /> <span style="font-weight:bold;">Activate/Desactivate limitation zone</span>: (By default &quot;W&quot;). Can be used in the edit mode &quot;<img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_MOVE_32_PNG.png" width="20" /> <a href="#mode_edition_deplacer_pieces">Moving mode</a>&quot; to activate or deactivate the limitation zone, which is an available zone for moving the selected part.</li>
+                <li style="text-align: left;"><img height="20" src="../../../../assets/images/swStyleBlueu_PNG_STRING_20_PNG1.png" width="20" /> <span style="font-weight:bold;">Activate/Deactivate assembly colors</span>: (Default is &quot;J&quot;). Shows or hides the colors of the source files.</li>
+                <li style="text-align: left;"><img src="../../../../assets/images/swStyleBlueu_PNG_STRING_20_PNG1.png" /> <span style="font-weight:bold;">Change color</span>: (Default is &quot;H&quot;). Allows to change the color assigned to a source file.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p style="text-align: left;"> </p>
+      <h3 style="text-align: left;"><u>Sections:</u></h3>
+      <h3 style="text-align: left;"><a id="CONTENTS_SECTION"></a>CONTENTS SECTION</h3>
+      <p><u>Options:</u></p>
+      <li style="text-align: left;"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/NESTING_NEW_32_PNG.png" width="20" /> <strong>New sheet</strong> : Allows to add a sheet (of the material of your choice with the <img src="../../../../assets/images/swStyleBlueu_PNG_BUTTONARROW_DOWNLIGHT_15_PNG.png" style="cursor: default; max-width: 100%; height: auto; color: rgb(0, 0, 0); font-family: Eurostile; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" />arrow) to the current Nesting project.</li>
+      <li style="text-align: left;"><img height="20" src="../../../../assets/SWOOD_RESOURCES/Others/DELETE_32_PNG.png" width="20" /> <strong>Delete</strong> : Allows to delete a sheet from the current project. Once the sheet has been deleted, all the parts of this sheet are in the <img src="../../../../assets/images/swStyleBlueu_PNG_NESTINGPARTS_2_20_PNG1.png" style="cursor: default; max-width: 100%; height: auto; color: rgb(0, 0, 0); font-family: Eurostile; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" />Not nested parts section.</li>
+      <li style="text-align: left;"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/UP_DOWN.png" width="36" /> <strong>Up/Down</strong> : Allows to manage the order of the <img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/BOARD_32_PNG.png" style="cursor: default; max-width: 100%; height: auto; color: rgb(0, 0, 0); font-family: Eurostile; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" width="20" />boards (materials) in the Design Tree.</li>
+    </justify>
+    <p style="text-align: left;"> </p>
+    <p style="text-align: left;"><u>Design Tree:</u></p>
+    <p style="text-align: left;"><img src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/EXTEND.png" style="cursor: nesw-resize;" /><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/BOARDLIB_32_PNG.png" style="cursor: nwse-resize;" width="20" /> Editable Sheets: List of sheets of the current nesting.</p>
+    <p style="text-align: left;">          <img src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/EXTEND.png" style="cursor: nesw-resize;" /><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/BOARD_32_PNG.png" width="20" /> Board: List of nested sheets sorted by board of the same material.</p>
+    <p style="text-align: left;">                   <img src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/EXTEND.png" style="cursor: nesw-resize;" /><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/NESTING_DISABLED_32_PNG.png" width="20" /> Sheet: Nested sheet of parts to be nested.</p>
+    <p style="text-align: left;">                               <img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/NESTEDPART_32_PNG.png" width="20" /> Part to be nested: Part of the nested sheet.</p>
+    <p style="text-align: left;"> </p>
+    <justify>
+      <h3 style="text-align: left;"><a id="EDITION_SECTION"></a>EDITION SECTION</h3>
+      <p>This section is the graphics interface for changing the position of the parts in the selected sheet.</p>
+      <p>The editing possibilities are relative to the selected editing mode:</p>
+    </justify>
+    <p><img height="20" src="../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><a id="mode_edition_deplacer_pieces"></a><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_MOVE_32_PNG.png" width="20" /> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Moving mode</a> </p>
+    <div class="droptext" data-targetname="drop-down" style="border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+      <p>In the mode &quot;<img height="20" data-cke-saved-src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_MOVE_32_PNG.png" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_MOVE_32_PNG.png" width="20" /> Moving mode&quot; the position and the rotation of parts can be edited.<br /></p>
+      <p>To <span style="font-weight:bold;">move a part</span>, simply click and drag while holding down the click.<br /></p>
+      <p style="text-align: center"><img height="500" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MOVINGMODE_TRANSLATE.gif" style="text-align: center;" width="604" /></p>
+      <p style="text-align: left">To <span style="font-weight:bold;">rotate a part</span> (by the selected <a href="#Rotation_Step">rotation step</a>) hold the selected part and press the &quot;R&quot; key.<br /></p>
+      <p style="text-align: center"><img height="500" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MOVINGMODE_ROTATION.gif" width="604" /></p>
+      <p style="text-align: left">A rectangular <span style="font-weight:bold;">limitation zone</span> is visible when you press the &quot;W&quot; key, which allows you to position the part as close as possible to the other parts. This zone takes into account the dimensions of the other parts already placed on the sheet, and also the diameter of the milling tool.</p>
+      <p style="text-align: center"><img height="500" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MOVINGMODE_LIMITATION.gif" width="604" /></p>
+      <p style="text-align: left">In this editing mode, it is also possible to individually move:</p>
+      <ul class="Disc">
+        <li style="text-align: left;">The <span style="font-weight:bold;">lead-in points</span> of each part, in order to limit the rapid movements of the tool and thus reduce the machining time.</li>
+      </ul>
+      <p style="text-align: center"><img height="200" src="../../../../assets/images/image345.png" width="300" /></p>
+      <ul class="Disc">
+        <li style="text-align: left;">The <span style="font-weight:bold;">labels</span> of the parts, in order to have a personalized positioning.</li>
+      </ul>
+      <p style="text-align: center"><img src="../../../../assets/images/image276.png" /></p>
+    </div>
+  </div>
+  <p><img height="20" src="../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><a id="mode_ordre_pieces"></a><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ORDER_32_PNG.png" width="20" /> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Ordering mode</a></p>
+  <div class="droptext" data-targetname="drop-down1" style="border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+    <p>In the &quot;<img height="20" data-cke-saved-src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ORDER_32_PNG.png" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ORDER_32_PNG.png" width="20" /> Ordering mode&quot; it is possible to manually redefine the machining order of the parts, calculated by the algorithm thanks to the <a href="../NESTING_PROJECT_PARAMETERS/NESTING_PROJECT_PARAMETERS.htm#CAM">CAM parameters</a>.</p>
+    <p>To remove the calculated machining order, simply click on the parts.<br /></p>
+    <p>To assign a new order, select the parts in the order of your choice.</p>
+    <p style="text-align: center"><img height="500" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/ORDERINGMODE.gif" width="604" /></p>
+  </div>
+  <p><img height="20" src="../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><a id="mode_attaches"></a><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ATTACH_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Bridge mode</a></p>
+  <div class="droptext" data-targetname="drop-down2" style="border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+    <p>In the &quot;<img height="20" data-cke-saved-src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ATTACH_32_PNG.png" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ATTACH_32_PNG.png" style="cursor: nesw-resize;" width="20" />Bridge mode&quot;, it is possible to manually specify the position of bridges, which allow to keep a connection between two parts and facilitate their holding together during machining.<br /></p>
+    <p style="text-align: center"><img height="500" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/ATTACHESMODE.gif" width="604" /></p>
+    <p style="text-align: center"><img height="20" src="../../../../assets/SWOOD_RESOURCES/QUICK_STARTER/ATTENTION.svg" width="20" /> It is not possible to insert bridges on curved edges.</p>
+    <p style="text-align: left"><span style="font-weight:bold;">Display:</span></p>
+    <p style="text-align: left">By hovering over a part&#39; s edge, it changes color and becomes:</p>
+    <ul class="Disc">
+      <li style="text-align: left;"><span style="color:rgba(100, 100, 0, 0.98);">Yellow</span>, on a part zone next to another.</li>
+      <li style="text-align: left;"><span style="color:rgba(255, 158, 0, 0.98);">Orange</span>, on a part zone far enough to other parts.</li>
+      <li style="text-align: left;"><span style="color:#ff0000;">Red</span>, on a part zone where it’s not possible to insert bridges, because it is too close to the ends of the edges or other bridges.</li>
+    </ul>
+    <p style="text-align: left"> </p>
+    <p><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTIONS_32_PNG.png" width="20" /> <span style="font-weight:bold">Options:</span></p>
+    <p>In the &quot;<img height="20" data-cke-saved-src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ATTACH_32_PNG.png" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ATTACH_32_PNG.png" style="cursor: nesw-resize;" width="20" />Bridge mode&quot; mode, when the <strong><img height="20" data-cke-saved-src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTIONS_32_PNG.png" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTIONS_32_PNG.png" width="20" /> </strong>option button is clicked, it is possible to change the bridge settings:<br /></p>
+    <ul class="Disc">
+      <li><img src="../../../../assets/images/swStyleBlueu_PNG_LENGTH_20_PNG.png" /> <span style="text-decoration:underline;">Length</span>: Defines the total length of the bridge (at the bottom of the wedges).</li>
+      <li><img src="../../../../assets/images/swStyleBlueu_PNG_LENGTH_20_PNG.png" /> <span style="text-decoration:underline;">Height</span>: Defines the height of the bridge from the bottom of the panel.</li>
+      <li><img src="../../../../assets/images/swStyleBlueu_PNG_ANGLE_20_PNG1.png" /> <span style="text-decoration:underline;">Angle</span>: Defines the angle of the bridge from the bottom of the panel.</li>
+    </ul>
+    <p style="text-align: center"> <img align="" height="400" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/ATTACH_PARAMETERS.png" width="396" /></p>
+  </div>
+  <p><img height="20" src="../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><a id="mode_numerotation"></a><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ORDER_REPORT_32_PNG.png" width="20" /> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#">Numbering</a></p>
+  <div class="droptext" data-targetname="drop-down3" style="border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+    <p>In the &quot;<img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_ORDER_REPORT_32_PNG.png" width="20" />Numbering&quot; mode it is possible to manually redefine the numbering of the parts, calculated by the algorithm thanks to the <a href="../NESTING_PROJECT_PARAMETERS/NESTING_PROJECT_PARAMETERS.htm#Numérotation">Numbering parameters</a>.</p>
+    <p>To modify the numbering, you must first activate the &quot;<img src="../../../../assets/images/swStyleBlueu_PNG_BOOLEAN_20_PNG4.png" /> Specific to sheet&quot; option, then activate the <span style="font-weight:bold;">None</span> &quot;<span style="text-align:justify;"><span style="text-align:justify;font-size:15px"><u style="font-size: 15px"><strong style="font-size: 15px"><img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD Design/SCRIPTS/OPTION_32_PNG.png" style="font-size: 15px;" width="20" /></strong></u></span></span> Mode&quot;.</p>
+    <p style="text-align: center"><img height="398" src="../../../../assets/images/numberin_En.gif" width="600" /></p>
+  </div>
+  <p> </p>
+  <p><span style="text-decoration:underline;font-weight:bold">Graphics tools</span></p>
+  <p>There are 3 options in the Graphics Area:</p>
+  <p><img height="22" src="../../../../assets/images/image302.png" width="81" /></p>
+  <p><img src="../../../../assets/images/swStyleBlueu_PNG_ZOOM_TOFIT_20_PNG.png" /> &quot;Zoom to Fit&quot;: Zooms in or out so that the selected sheet or sheets are fully visible.</p>
+  <p><img src="../../../../assets/images/swStyleBlueu_PNG_ZOOM_AREA_20_PNG.png" /> &quot;Zoom to Area&quot;: Zooms in on a portion of the selected graphics area.</p>
+  <p><img src="../../../../assets/images/swStyleBlueu_PNG_SHOWHIDE_20_PNG.png" /> &quot;Show/hide&quot;: Hide or show, in the Graphics Area, the following elements:</p>
+  <p>      <img src="../../../../assets/images/swStyleBlueu_PNG_MODE_ORDER_20_PNG.png" /> &quot;See order&quot;: Shows the machining order of the nesting project (defined from the <a href="../NESTING_PROJECT_PARAMETERS/NESTING_PROJECT_PARAMETERS.htm#CAM">Machining parameters</a>).</p>
+  <p>      <img src="../../../../assets/images/swStyleBlueu_PNG_ANCHOR_20_PNG.png" /> &quot;See lead-in points&quot;: Shows the start and end points of the contour machining of the parts.</p>
+  <p>      <img src="../../../../assets/images/swStyleBlueu_PNG_MODE_ATTACH_20_PNG.png" /> &quot;See bridges&quot;: Shows the bridges of the parts, defined automatically in the <a href="../PARTS_TYPE/BRIDGE_RULES.htm">Bridge rule</a> or manually in the <a href="#mode_attaches">Bridge mode</a>.</p>
+  <p>      <img src="../../../../assets/images/image301.png" /> &quot;See Numbering&quot;: Shows the numbering of the parts in the nesting sheet (defined from the <a href="../NESTING_PROJECT_PARAMETERS/NESTING_PROJECT_PARAMETERS.htm#Numbering">Numbering parameters</a>).</p>
+  <p>      <img src="../../../../assets/images/swStyleBlueu_PNG_COLOR_20_PNG.png" /> &quot;See assembly colors&quot;: (Only if <img height="20" src="../../../../assets/SWOOD_RESOURCES/SOLIDWORKS/ASSEMBLY_32_PNG.png" width="20" />Assemblies have been inserted in the <img height="25" src="../../../../assets/SWOOD_RESOURCES/Others/OPEN/OPEN_FOLDER_32_PNG.png" width="25" />source files) Shows the parts from the same assembly with the same color.</p>
+  <p>      <img src="../../../../assets/images/swStyleBlueu_PNG_COLOR_20_PNG.png" /> &quot;See part types&quot;: Shows the different <a href="../PARTS_TYPE/PARTS_TYPE.htm">Part types</a> with the same color.</p>
+  <p> </p>
+  <h3 style="text-align: left;"><a id="NE_NESTED_PART_SECTION"></a>NOT NESTED PARTS SECTION</h3>
+  <p>The section of <img src="../../../../assets/images/swStyleBlueu_PNG_NESTINGPARTS_2_20_PNG1.png" style="cursor: default; max-width: 100%; height: auto; color: rgb(0, 0, 0); font-family: Eurostile; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify; background-color: rgb(255, 255, 255);" />not nested parts can be used as a storage area for parts to be placed later when rearranging the Nesting sheet, in the &quot;<img height="20" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/MODE_MOVE_32_PNG.png" style="cursor: nwse-resize;" width="20" /> <a href="#mode_edition_deplacer_pieces">Moving mode</a>&quot;.</p>
+  <p style="text-align: center"><img height="400" src="../../../../assets/SWOOD_RESOURCES/SWOOD CAM NESTING/NOTNESTEDPARTS.gif" width="1031" /></p>
+  <p style="text-align: left;"> </p>
+  <p style="text-align: left;"> </p>
+  <p style="text-align: left;"> </p>
+  <ol>
+  </ol>
+</body>
+</html>

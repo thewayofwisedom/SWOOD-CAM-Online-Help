@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Automatic operations</title>
+  <link rel="StyleSheet" href="../../../../../assets/css/SWOOD Help.css" type="text/css" />
+  <meta name="condition-tags" content="Langue:English" />
+  <meta http-equiv="Content-Language" content="en-UK" />
+</head>
+<body>
+  <h1>AUTOMATIC OPERATIONS<img align="right" height="50" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM_2020.png" style="text-align: left; line-height: 1; margin-left: 0px; margin-top: 5px;" width="140" /></h1>
+  <p><span style="text-decoration:underline;"><a id="Introduction"></a>Introduction</span></p>
+  <div class="contains" style="">
+    <p><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px">Automatic operations are based on the geometric recognition of the model.In addition to automatically detecting geometries, they also allow customization of machining strategies when creating <a href="../../Machinings/Machinings.htm">machining entities</a>.</span></span></p>
+    <p class="Signet" style="font-size: 17px">General</p>
+    <ol class="RoundSquare">
+      <li class="Signet" style="font-size: 17px;"><strong><u>Selection</u></strong></li>
+    </ol>
+    <p style="font-size: 15px"><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px">The automatic operations all have the same creation methodology. They do not require any selection (body / surface / edge) to be created. In a part or assembly, it is therefore necessary to click <span style="font-size: 15px;"><span style="text-align:justify;font-size:15px"><img height="20" src="../../../../../assets/images/image2.png" style="font-size: 15px;" width="14" /></span></span> in the <strong>&quot;empty&quot;/background part</strong> of SOLIDWORKS before creating its operation. </span></span></p>
+    <p style="font-size: 15px"> </p>
+    <ol class="RoundSquare">
+      <li style="font-size: 15px;"><strong><u>Navigation</u></strong></li>
+    </ol>
+    <p style="font-size: 15px;">When SWOODCAM has detected several profiles to be machined, it is possible in the automatic operation to navigate between the profiles using the following buttons :</p>
+    <ol class="RoundSquare">
+      <li style="font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PREVIOUS_PROFIL.png" width="30" /> Selecting previous profile</li>
+      <li style="font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/NEXT_PROFIL.png" width="30" /> Selecting next profile</li>
+    </ol>
+    <p style="font-size: 15px"> </p>
+    <p class="Signet" style="font-size: 17px">Operations</p>
+    <p style="font-size: 15px">Several operations are available in automatic, depending on the tool used, the origin as well as the selected machine.</p>
+    <p style="font-size: 15px">When no selection is made, a left click <span style="font-size: 15px;"><span style="text-align:justify;font-size:15px"><img height="20" src="../../../../../assets/images/image2.png" style="font-size: 15px;" width="14" /> on Milling <img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/EU/EUF_32_PNG.png" width="20" /> allows you to display the automatic operations bar (except predrilling) :</span></span></p>
+    <p style="font-size: 15px"><img src="../../../../../assets/images/image613.png" /></p>
+    <p style="font-size: 15px">The automatic drilling operation is available via the drilling icon. <img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/PERCER_32_PNG.png" width="20" /> from the <a href="../../Toolbar_SWOOD_CAM/SWOODCAM_TOOLBAR.htm">SWOODCAM feature bar.</a></p>
+    <p style="font-size: 15px; text-align: left;"> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/EU/EUDETOURER_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down39" style="font-size: 15px">Outline</a></span></u></p>
+    <div class="droptext" data-targetname="drop-down39" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Outline allows to process all the open contours of one or more parts.</p>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">The available operations are :</p>
+      <p style="font-size: 15px; text-align: left;"> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/DETOURER/DETOURER_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down106" style="font-size: 15px">Outline Contour</a></span></u></p>
+      <div class="droptext" data-targetname="drop-down106" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+        <p>The Outline Contour operation is a contour operation for optimising the processing of the outer contours of a part.</p>
+        <p>In fact, it will allow the <strong>SWOOD Design</strong> edgebands to be taken into account, giving a wider choice of parameters.</p>
+        <p>This operation is only available in automatic mode. </p>
+        <p>For details of the available parameters, see the page of <a href="../Contours/Outline_Contour/Outline_Contour.htm">Outline Contour.</a></p>
+      </div>
+      <p style="font-size: 15px; text-align: left;"><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="21" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/DEPLACER_CENTRE_OUTIL/MOVE_TOOL_CENTER.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down40" style="font-size: 15px">Move tool center</a></span></u></p>
+      <div class="droptext" data-targetname="drop-down40" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">The parameters to be entered in the automatic Move Tool Center operation remain the same as for the manual Move Tool Center operation. Only some options relating to the machining of several profiles have been added. If the information you are looking for is not present in this section, please refer to the <a href="../Contours/Move_tool_center/Move_tool_center.htm">Move tool center operation</a> for the parameters specific to Move Tool Center, or the <a href="../Operations.htm#General_information">General informations</a> for parameters common to all operations.</p>
+        <ol class="RoundSquare">
+          <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u>Outers/Inners</u></strong>
+            <ol>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">
+                <p style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/INSIDE_OUSIDE_PROFILES.png" width="30" /><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down57" style="font-size: 15px">Machining all profiles</a></span></u></p>
+                <div class="droptext" data-targetname="drop-down57" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+                  <ol class="RoundSquare">
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Outers<br />
+                       </li>
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Inners:<br />
+                       
+                      <ol>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Circulars</li>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Rectangular</li>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Quelconques</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">
+                <p style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/INSIDE_RECTANGULAR_OUSIDE_PROFILES.png" width="31" /><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down58" style="font-size: 15px">Machining of all profiles except circular interiors</a></span></u></p>
+                <div class="droptext" data-targetname="drop-down58" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+                  <ol class="RoundSquare">
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Outers<br />
+                       </li>
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Inners:<br />
+                       
+                      <ol>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Rectangular</li>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Quelconques</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">
+                <p style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/OUSIDE_PROFILES.png" width="31" /><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down59" style="font-size: 15px">Machining of external profiles</a></span></u></p>
+                <div class="droptext" data-targetname="drop-down59" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+                  <ol class="RoundSquare">
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Outers</li>
+                  </ol>
+                </div>
+              </li>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">
+                <p style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/INSIDE_PROFILES.png" width="31" /><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down60" style="font-size: 15px">Machining of all interior profiles</a></span></u></p>
+                <div class="droptext" data-targetname="drop-down60" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+                  <ol class="RoundSquare">
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Inners:
+                      <ol>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Circulars</li>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Rectangular</li>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Quelconques</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">
+                <p style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/INSIDE_RECTANGULAR_PROFILES.png" width="30" /><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down61" style="font-size: 15px">Machining of interior profiles except circulars</a></span></u></p>
+                <div class="droptext" data-targetname="drop-down61" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+                  <ol class="RoundSquare">
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Inners:<br />
+                       
+                      <ol>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Rectangular</li>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Quelconques</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+      <p style="font-size: 15px; text-align: left;"><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/DETOURER/DETOURER_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down41" style="font-size: 15px">Contour</a></span></u></p>
+      <div class="droptext" data-targetname="drop-down41" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">The parameters to be entered in the automatic contouring operation remain the same as for manual contours. Only some options related to the machining of several profiles have been added. If the information you are looking for is not present in this section, see <a href="../Contours/Contours.htm">Contour milling</a> for parameters specific to contours, or the <a href="../Operations.htm#General_information">General informations</a> for parameters common to all operations.</p>
+        <ol class="RoundSquare">
+          <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u>Machining by level or profile</u></strong>
+            <ol>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/MILLING_PER_LEVEL.png" width="31" /> <strong><u><strong><u>Machining by level</u></strong> :</u></strong> Allows to machine the levels of the different profiles at the same time (1st pass of all the profiles, then 2nd pass of all the profiles...etc)<br />
+                 </li>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/MILLING_PER_PROFIL.png" width="30" /> <strong><u><strong><u>Machining by </u></strong><strong><u>profile </u></strong>:</u></strong> Allows you to machine the complete profile before moving on to the next one.<br />
+                 </li>
+            </ol>
+          </li>
+          <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u><strong><u>Outers/Inners</u></strong></u></strong>
+            <ol>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">
+                <p style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/INSIDE_OUSIDE_PROFILES.png" width="30" /><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down62" style="font-size: 15px">Machining all profiles</a></span></u></p>
+                <div class="droptext" data-targetname="drop-down62" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+                  <ol class="RoundSquare">
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Outers<br />
+                       </li>
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Inners:<br />
+                       
+                      <ol>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Circulars</li>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Rectangular</li>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Quelconques</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">
+                <p style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/INSIDE_RECTANGULAR_OUSIDE_PROFILES.png" width="31" /><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down63" style="font-size: 15px">Machining of all profiles except circular interiors</a></span></u></p>
+                <div class="droptext" data-targetname="drop-down63" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+                  <ol class="RoundSquare">
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Outers<br />
+                       </li>
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Inners:<br />
+                       
+                      <ol>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Rectangular</li>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Quelconques</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">
+                <p style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/OUSIDE_PROFILES.png" width="31" /><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down64" style="font-size: 15px">Machining of external profiles</a></span></u></p>
+                <div class="droptext" data-targetname="drop-down64" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+                  <ol class="RoundSquare">
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Outers</li>
+                  </ol>
+                </div>
+              </li>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">
+                <p style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/INSIDE_PROFILES.png" width="31" /><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down65" style="font-size: 15px">Machining of all interior profiles</a></span></u></p>
+                <div class="droptext" data-targetname="drop-down65" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+                  <ol class="RoundSquare">
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Inners:
+                      <ol>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Circulars</li>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Rectangular</li>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Quelconques</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">
+                <p style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/INSIDE_RECTANGULAR_PROFILES.png" width="30" /><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nesw-resize;" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down66" style="font-size: 15px">Machining of interior profiles except circulars</a></span></u></p>
+                <div class="droptext" data-targetname="drop-down66" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+                  <ol class="RoundSquare">
+                    <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Inners:<br />
+                       
+                      <ol>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Rectangular</li>
+                        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Quelconques</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+            </ol>
+          </li>
+        </ol>
+        <p style="font-size: 15px; text-align: left;">You will notice that it is not possible to isolate circular profiles only. Indeed this is managed in the automatic drilling, which will allow to take this case into account with the helical interpolation.</p>
+      </div>
+    </div>
+    <p style="font-size: 15px;text-align: center"><span><u><span style="color:#0000ff;"><span><u><span style="color:#0000ff;"></span></u></span></span></u></span></p>
+    <p style="font-size: 15px;text-align: left"><span><u></u></span></p>
+  </div>
+  <div class="contains">
+    <ol>
+    </ol>
+  </div>
+  <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/EU/EUP_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down49" style="font-size: 15px">Automatic drilling</a></span></u></p>
+  <div class="droptext" data-targetname="drop-down49" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+    <p>The automatic drilling allows, with the help of the automatic geometry detection SWOOD CAM, to process cylindrical &quot;holes&quot;, through holes or not.</p>
+    <p>Note that SWOODCAM will carry out the machining of all geometries that can be processed by the tool used.</p>
+    <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/EU/EUP_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down51" style="font-size: 15px">Drilling</a></span></u></p>
+    <div class="droptext" data-targetname="drop-down51" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">After choosing the tool and the drilling operation, the operation setting window will appear on the screen:</p>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">The principle remains the same as with the <a href="../DRILL/Drill.htm">manual drilling</a>. However, with the automatic operation, are managed the blind or through-all cases simultaneously.</p>
+      <p style="font-size: 15px; text-align: left;"><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down52" style="font-size: 15px">Options related to the operation :</a></span></u></p>
+      <div class="droptext" data-targetname="drop-down52" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Depending on how the operation is set up, certain parameters can be entered:</p>
+        <ol class="RoundSquare">
+          <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/GEOMETRY_DEPTH.png" style="cursor: nwse-resize;" width="30" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down53" style="font-size: 15px">Geometries depth</a></span></u>
+            <div class="droptext" data-targetname="drop-down53" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+              <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Allows the hole to be drilled from the top side of the hole to the bottom side..</p>
+              <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/AUTO_DRILL_DIAGRAM.png" /></p>
+              <ol class="AlphaNumeric">
+                <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Approach Z value</li>
+                <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Bottom oversize (blind case)</li>
+                <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Bottom exceeding (through-all case)</li>
+              </ol>
+            </div>
+          </li>
+          <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/RAW_EXTENSION.png" style="cursor: nwse-resize;" width="31" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down54" style="font-size: 15px">Extension to the raw :</a></span></u>
+            <div class="droptext" data-targetname="drop-down54" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+              <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Allows the hole to be drilled from the top side of the raw to the bottom side.</p>
+              <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/AUTO_DRILL_DIAGRAM.png" /></p>
+              <ol class="AlphaNumeric">
+                <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Approach Z value</li>
+                <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Bottom oversize (blind case)</li>
+                <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Bottom exceeding (through-all case)</li>
+              </ol>
+            </div>
+          </li>
+          <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/CUSTOM_DEPTH.png" style="cursor: nwse-resize;" width="30" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down55" style="font-size: 15px">Defined depth :</a></span></u>
+            <div class="droptext" data-targetname="drop-down55" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+              <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Allows you to drill from the top of the holes to the selected depth :</p>
+              <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/CUSTOM_DEPTH_BLIND_DIAGRAM.png" /></p>
+              <ol class="AlphaNumeric">
+                <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Approach Z value</li>
+                <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Bottom oversize</li>
+                <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Defined depth</li>
+              </ol>
+            </div>
+          </li>
+          <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/EXTEND_TO_ROUGH_TOP_AND_BOTTOM.png" style="cursor: nwse-resize;" width="30" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down56" style="font-size: 15px">Extended to rough top and bottom :</a></span></u>
+            <div class="droptext" data-targetname="drop-down56" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+              <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Allows the holes to be drilled using the top side of the raw to the bottom side of the raw.</p>
+              <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/AUTO_DRILL_DIAGRAM.png" /></p>
+              <ol class="AlphaNumeric">
+                <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Approach Z value</li>
+                <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Bottom oversize (blind case)</li>
+                <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Bottom exceeding (through-all case)</li>
+              </ol>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u>The graphic area :</u></strong></p>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">The graphic area is empty if the tool used is a simple tool (because tool choice made before choosing the operation).</p>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">In case a drilling block is used, the graphic area will display its schematics of it.</p>
+      <ol class="RoundSquare">
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">The spindles used are displayed in blue. <img src="../../../../../assets/images/image39.png" /></li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">Unused spindles are grayed out. <img src="../../../../../assets/images/image40.png" /></li>
+      </ol>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">It is not possible to choose which tool to use by clicking on it from the graphic area. As previously mentioned, the automatic operation processes all possible geometries.</p>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u>Tips :</u></strong> If a spindle is not to be used, one solution is to remove it from the drill block, or replace it with an empty spindle.</p>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;">To the right of the graphic area there is an additional option :</p>
+      <ol class="RoundSquare">
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/PERCER/REVERSE_DRILLING_DIRECTION.png" width="30" /> <u><strong>Reverse boring direction :</strong></u> Reverse the drilling direction. The spindle orientation will also be reversed.</li>
+      </ol>
+    </div>
+  </div>
+  <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/EU/EUPOCKET_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down93" style="font-size: 15px">Auto Pocket</a></span></u></p>
+  <div class="droptext" data-targetname="drop-down93" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+    <p>The automatic poaching machine can handle all geometries of the &quot;blind hole&quot; type, whether circular, rectangular or of any other shape. This feature can also be used to process open profiles of the &quot;rabbet&quot; type.</p>
+    <p>By using this feature, several operations are available:</p>
+    <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/POCHER_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down94" style="font-size: 15px">Pocket milling</a></span></u></p>
+    <div class="droptext" data-targetname="drop-down94" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/ENTAILLER/AUTO_DRILLING_MORTISING_DIAGRAM.png" /></p>
+      <ol class="Decimal">
+        <li style="font-size: 15px; text-align: left;"> Approach Z value</li>
+        <li style="font-size: 15px; text-align: left;"> Maximum depth of passes</li>
+        <li style="font-size: 15px; text-align: left;"> Depth of the last passes</li>
+        <li style="font-size: 15px; text-align: left;"> Bottom oversize (positive or negative values accepted)</li>
+        <li style="font-size: 15px; text-align: left;"> Extra thickness lateral (positive or negative values accepted)</li>
+      </ol>
+      <p style="font-size: 15px; text-align: left;"><strong><u></u></strong></p>
+      <p style="font-size: 15px; text-align: left;"><strong><u>Extension to the raw :</u></strong> Automatically detects the height of the profile to be processed up to the raw part. </p>
+      <ol class="RoundSquare">
+        <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAW_EXTENSION_OFF.png" width="30" /> Extension to the raw deactivated</li>
+        <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAW_EXTENSION_TOP.png" width="30" /> Extension to the raw activated</li>
+      </ol>
+      <p style="font-size: 15px; text-align: left;"><strong><u></u></strong></p>
+      <p style="font-size: 15px; text-align: left;"><strong><u>Multipass with Jump between passes or Zig-Zag :</u></strong></p>
+      <ol class="RoundSquare">
+        <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/MILLING_WITH_JUMP_BETWEEN_PASSES.png" width="30" /> <u><strong>Mill with jump between passes :</strong></u> Allows the pockets to be machined by moving up in Zsecu after each pass.</li>
+        <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/MILLING_WITHOUT_JUMP_BETWEEN_PASSES.png" width="30" /> <u><strong>Mill without jump between passes :</strong></u> Allows the machining of pockets without going up in Zsecu. Between each pass the tool plunges without moving upwards.</li>
+      </ol>
+      <p style="font-size: 15px; text-align: left;"><strong><u></u></strong></p>
+      <p style="font-size: 15px; text-align: left;"><strong><u>Spiral path with constant Z / jumping between disjoint zones :</u></strong></p>
+      <ol class="RoundSquare">
+        <li style="font-size: 15px; text-align: left;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/balyage1.png" /> <u><strong><strong><u>Spiral path with constant Z</u></strong> :</strong></u> Allows the machining of pockets with disjointed areas without repositioning the tool between the areas.</li>
+        <li style="font-size: 15px; text-align: left;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/balyage2.png" /> <u><strong><strong><u>Spiral path with</u></strong></strong></u><u><strong> <strong><u>jumping between disjoint zones </u></strong>:</strong></u> Allows the machining of pockets with disjointed zones by moving the tool upwards between the different zones..</li>
+      </ol>
+      <p style="font-size: 15px; text-align: left;"><strong><u>Machining by level or by profil</u></strong></p>
+      <ol class="RoundSquare">
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/MILLING_PER_LEVEL.png" width="30" /> <strong><u>Machining by level :</u></strong> Allows to machine the levels of the different profiles at the same time (1st pass of all the profiles, then 2nd pass of all the profiles...etc)<br />
+           </li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/MILLING_PER_PROFIL.png" width="30" /> <strong><u>Machining by profil :</u></strong> Allows the complete profile to be machined before moving on to the next one.</li>
+      </ol>
+    </div>
+    <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/POCHER_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down95" style="font-size: 15px">Bottom pocket finishing</a></span></u></p>
+    <div class="droptext" data-targetname="drop-down95" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/FINISH_POCKET.png" /></p>
+      <ol class="Decimal">
+        <li style="font-size: 15px; text-align: left;"> Approach Z value</li>
+        <li style="text-align: left;"><span style="font-size: 15px;"> </span>Bottom oversize<span style="font-size: 15px;"> (positive or negative values accepted)</span></li>
+        <li style="text-align: left;"><span style="font-size: 15px;"> </span>Extra thickness lateral<span style="font-size: 15px;"> (positive or negative values accepted)</span></li>
+      </ol>
+      <p style="font-size: 15px; text-align: left;"><strong><u></u></strong></p>
+      <p style="font-size: 15px; text-align: left;"><strong><u>Spiral path with constant Z / jumping between disjoint zones :</u></strong></p>
+      <ol class="RoundSquare">
+        <li style="font-size: 15px; text-align: left;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/balyage1.png" /> <u><strong><strong><u>Spiral path with constant Z</u></strong> :</strong></u> Allows the machining of pockets with disjointed areas without repositioning the tool between the areas.</li>
+        <li style="font-size: 15px; text-align: left;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/balyage2.png" /> <u><strong><strong><u>Spiral path with</u></strong></strong></u><u><strong> <strong><u>jumping between disjoint zones </u></strong>:</strong></u> Allows the machining of pockets with disjointed zones by moving the tool upwards between the different zones..</li>
+      </ol>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u></u></strong></p>
+      <p style="font-size: 15px; text-align: left;"><strong><u>Machining by level or by profil</u></strong></p>
+      <ol class="RoundSquare">
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/MILLING_PER_LEVEL.png" width="30" /> <strong><u>Machining by level :</u></strong> Allows to machine the levels of the different profiles at the same time (1st pass of all the profiles, then 2nd pass of all the profiles...etc)<br />
+           </li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/MILLING_PER_PROFIL.png" width="30" /> <strong><u>Machining by profil :</u></strong> Allows the complete profile to be machined before moving on to the next one.</li>
+      </ol>
+    </div>
+    <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/POCHER_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down96" style="font-size: 15px">Walls of pocket finishing</a></span></u></p>
+    <div class="droptext" data-targetname="drop-down96" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/WALL_POCKET_FINISHING.png" /></p>
+      <ol class="Decimal">
+        <li style="font-size: 15px; text-align: left;"> Approach Z value</li>
+        <li style="font-size: 15px; text-align: left;"> Maximum depth of passes</li>
+        <li style="font-size: 15px; text-align: left;"> Depth of the last passes</li>
+        <li style="font-size: 15px; text-align: left;"> Bottom oversize (positive or negative values accepted)</li>
+        <li style="font-size: 15px; text-align: left;"> Extra thickness lateral (positive or negative values accepted)</li>
+      </ol>
+      <p style="font-size: 15px; text-align: left;"><strong><u></u></strong></p>
+      <p style="font-size: 15px; text-align: left;"><strong><u>Extension to the raw :</u></strong> Automatically detects the height of the profile to be processed up to the raw part.</p>
+      <ol class="RoundSquare">
+        <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAW_EXTENSION_OFF.png" width="30" /> Extension to the raw deactivated</li>
+        <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAW_EXTENSION_TOP.png" width="30" /> Extension to the raw activated</li>
+      </ol>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u></u></strong></p>
+      <p style="font-size: 15px; text-align: left;"><strong><u>Machining by level or by profil</u></strong></p>
+      <ol class="RoundSquare">
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/MILLING_PER_LEVEL.png" width="30" /> <strong><u>Machining by level :</u></strong> Allows to machine the levels of the different profiles at the same time (1st pass of all the profiles, then 2nd pass of all the profiles...etc)<br />
+           </li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/MILLING_PER_PROFIL.png" width="30" /> <strong><u>Machining by profil :</u></strong> Allows the complete profile to be machined before moving on to the next one.</li>
+      </ol>
+    </div>
+    <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/REPRISE_ANGLE/REPRISE_ANGLE_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down97" style="font-size: 15px">Resumed pocket angles</a></span></u></p>
+    <div class="droptext" data-targetname="drop-down97" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/REPRISE_ANGLE/RESUMED_POCKET_ANGLE.png" /></p>
+      <ol class="Decimal">
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"> Approach Z value</li>
+        <li style="font-size: 15px; text-align: left;"> Maximum depth of passes</li>
+        <li style="font-size: 15px; text-align: left;"> Depth of the last passes</li>
+        <li style="font-size: 15px; text-align: left;"> Bottom oversize (positive or negative values accepted)</li>
+        <li style="font-size: 15px; text-align: left;"> Extra thickness lateral (positive or negative values accepted)</li>
+      </ol>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u></u></strong></p>
+      <p style="font-size: 15px; text-align: left;"><strong><u>Machining by level or by profil</u></strong></p>
+      <ol class="RoundSquare">
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/MILLING_PER_LEVEL.png" width="30" /> <strong><u>Machining by level :</u></strong> Allows to machine the levels of the different profiles at the same time (1st pass of all the profiles, then 2nd pass of all the profiles...etc)<br />
+           </li>
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/MILLING_PER_PROFIL.png" width="30" /> <strong><u>Machining by profil :</u></strong> Allows the complete profile to be machined before moving on to the next one.</li>
+      </ol>
+      <p style="font-size: 15px; text-align: left;"><strong><u><strong><u><strong><u>Milling after routing / Cut-groove milling :</u></strong></u></strong></u></strong></p>
+      <ol class="RoundSquare">
+        <li style="font-size: 15px; text-align: left;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/Remove_material_after_milling.png" /> <u><strong><strong><u></u></strong></strong></u><u><strong><strong><u><strong><u>Milling after routing</u></strong></u></strong> :</strong></u> Allows to process the corners after have used a pocket milling.</li>
+      </ol>
+      <p style="font-size: 15px; text-align: left;">After have created a Pocket milling, thi smilling detect automaticly the tool previously used to calculate the remaining paths. However, it is also possible to specify the diameter of the previous tool manualy.</p>
+      <ol class="RoundSquare">
+      </ol>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/Remove_material_after_milling_parameter.png" /></p>
+      <ol class="Decimal">
+        <li style="font-size: 15px; text-align: left;">Extra thickness roughing</li>
+        <li style="font-size: 15px; text-align: left;">Diameter of the roughing tool</li>
+        <li style="font-size: 15px; text-align: left;">Path lead in mm</li>
+        <li style="font-size: 15px; text-align: left;">Path lead in % of diameter tool</li>
+      </ol>
+      <p style="font-size: 15px; text-align: left;"> </p>
+      <ol class="RoundSquare">
+        <li style="font-size: 15px; text-align: left;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/Remove_material_after_grooving.png" /> <u><strong><strong><u></u></strong></strong></u><u><strong><strong><u>Milling after </u></strong><strong><u>cut-groove milling</u></strong><strong><u></u></strong>:</strong></u> Allows to process the corners after have used a Cut-groove milling.</li>
+      </ol>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/Remove_material_after_groovig_parameter.png" /></p>
+      <ol class="Decimal">
+        <li style="font-size: 15px; text-align: left;">Diameter of the roughing tool</li>
+        <li style="font-size: 15px; text-align: left;">Path lead in mm</li>
+        <li style="font-size: 15px; text-align: left;">Path lead in % of diameter tool</li>
+      </ol>
+      <ol class="RoundSquare">
+      </ol>
+    </div>
+    <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/POCHER_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down98" style="font-size: 15px">Machine pocket milling</a></span></u></p>
+    <div class="droptext" data-targetname="drop-down98" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+      <p><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px">The <strong>Machine Pocket milling</strong> is an operation for processing the blind geometries (without islands) present in a part. Contrary to the <strong>Pocket Milling</strong>, this operation does not export a trajectory but allows you to export a recess macro with the parameters indicated in SWOOD CAM.</span></span></p>
+      <p style="text-align: center"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER_MACHINE/POCHER_MACHINE_RESULT.png" /></p>
+      <p><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px"></span></span></p>
+      <p>This operation is available for export to the following software:</p>
+      <ul class="Disc">
+        <li><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px">BiesseWorks</span></span></li>
+        <li>BSolid</li>
+        <li>IMAWop</li>
+        <li>Maestro</li>
+        <li>TPA</li>
+      </ul>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/ENTAILLER/AUTO_DRILLING_MORTISING_DIAGRAM.png" style="cursor: nwse-resize;" /></p>
+      <ol class="Decimal">
+        <li style="font-size: 15px; text-align: left;"> Approach Z value</li>
+        <li style="font-size: 15px; text-align: left;"> Maximum depth of passes</li>
+        <li style="font-size: 15px; text-align: left;"> Depth of the last passes</li>
+        <li style="font-size: 15px; text-align: left;"> Bottom oversize (positive or negative values accepted)</li>
+        <li style="font-size: 15px; text-align: left;"> Extra thickness lateral (positive or negative values accepted)</li>
+      </ol>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u></u></strong></p>
+      <p style="font-size: 15px; text-align: left;"><strong><u>Extension to the raw :</u></strong> Automatically detects the height of the profile to be processed up to the raw part.</p>
+      <ol class="RoundSquare">
+        <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAW_EXTENSION_OFF.png" width="30" /> Extension to the raw deactivated</li>
+        <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAW_EXTENSION_TOP.png" width="30" /> Extension to the raw activated</li>
+      </ol>
+    </div>
+    <p><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /> <img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/POCHER_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down99" style="font-size: 15px">WOODWOP Pocket milling</a></span></u></p>
+    <div class="droptext" data-targetname="drop-down99" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+      <p><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px"></span></span></p>
+      <p><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px"></span></span><strong>WOODWOP Pocket milling</strong> is an operation to process blind geometries in a part. Contrary to the operation <strong>Pocket Milling</strong>, this operation does not export a trajectory but allows to export in WOODWOP a pocket macro with the parameters indicated in SWOOD CAM.<br />
+        This operation is available for any free form, except for pockets with islands.<span style="font-size: 15px;"><span style="text-align:justify;font-size:15px"></span></span></p>
+      <p><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px"></span></span></p>
+      <p style="text-align: center"><img src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER_MACHINE/POCHER_MACHINE_RESULT.png" /></p>
+      <p><span style="font-size: 15px;"><span style="text-align:justify;font-size:15px">The data to be entered to configure the operation is exactly the same as that of the <a href="../Pocket/WOODWOP_Pocket/WOODWOP_Pocket.htm">WOODWOP Pocket milling</a>.</span></span></p>
+    </div>
+    <p><strong><u>Parametrization of the geometries to be processed:</u></strong></p>
+    <p>You can filter the detection parameters of the operation by &quot;Edit Selection&quot; from <a href="../../Machinings/EditSelection/Auto_pocket/Auto_pocket.htm">Machining Pocket milling</a></p>
+    <p> <strong></strong></p>
+  </div>
+  <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><strong><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/EU/EUCLAMEX_32_PNG.png" width="20" /></strong> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down100" style="font-size: 15px">Auto Clamex</a></span></u></p>
+  <div class="droptext" data-targetname="drop-down100" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+    <p>The Automatic Clamex enables the automatic processing of clamex geometries on the part / assembly.</p>
+    <p>The data to be filled in are exactly the same as those of the <a href="../Surfaces/No_planes_Other/Clamex/Clamex.htm">Clamex Milling</a>. </p>
+    <p>After creating the automatic clamex operation, it is possible to filter the geometries to be processed via the <a href="../../Machinings/EditSelection/Auto_Clamex/Auto_Clamex.htm">machining entity of the automatic clamex</a>.</p>
+  </div>
+  <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><strong><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/EU/EUSAWPLANE_32_PNG.png" width="20" /></strong> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down101" style="font-size: 15px">Auto flat face</a></span></u></p>
+  <div class="droptext" data-targetname="drop-down101" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+    <p>Automatic Sawing allows for the automatic processing of flat, inclined or non-inclined surfaces in the part/assembly.</p>
+    <p>The only operation available is sawing <img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/SCIER/SCIER_32_PNG.png" style="cursor: nwse-resize;" width="20" /> . The data to be filled in are exactly the same as those of the <a href="../Contours/Saw/Saw.htm">Saw milling</a>.</p>
+    <p>After creating the Auto flat face operation, it is possible to filter the geometries to be processed via the <a href="../../Machinings/EditSelection/Auto_Sawing/Auto_Sawing.htm">machining entity of the Auto flat face</a>.</p>
+  </div>
+  <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><strong><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/EU/EUGROOVE_32_PNG.png" width="20" /></strong> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down102" style="font-size: 15px">Auto groove</a></span></u></p>
+  <div class="droptext" data-targetname="drop-down102" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+    <p>The Automatic Slot allows you to automatically process grooves in the selected plane, whether they are blind or not.</p>
+    <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/POCHER_32_PNG.png" width="20" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down103" style="font-size: 15px">Cut-groove</a></span></u></p>
+    <div class="droptext" data-targetname="drop-down103" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+      <p style="font-size: 15px; text-align: left;"><strong><u></u></strong></p>
+      <p style="font-size: 15px; text-align: left;"><strong><u><strong><u>Multipass with Jump between passes or Zig-Zag :</u></strong></u></strong></p>
+      <ol class="RoundSquare">
+        <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/MILLING_WITH_JUMP_BETWEEN_PASSES.png" width="30" /> <u><strong><u><strong>Mill with jump between passes :</strong></u></strong></u> Allows the grooves to be machined by repositioning the blade between each pass.</li>
+        <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/POCHER/MILLING_WITHOUT_JUMP_BETWEEN_PASSES.png" width="30" /> <u><strong><u><strong>Mill without jump between passes :</strong></u></strong></u> Allows the grooves to be machined without repositioning the blade between each pass. The climb/conventional direction varies according to the passes.</li>
+      </ol>
+      <p style="font-size: 15px; text-align: left;"><img height="19" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="19" /><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/THROUGH_ALL_Profile.png" width="30" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down104" style="font-size: 15px">Through-all profiles</a></span></u></p>
+      <div class="droptext" data-targetname="drop-down104" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"> </p>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="201" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAINURER/debouchant.png" style="cursor: nwse-resize;" width="311" /></p>
+        <ol class="Decimal">
+          <li style="font-size: 15px; text-align: left;"> Approach Z value</li>
+          <li style="font-size: 15px; text-align: left;"> Maximum depth of passes</li>
+          <li style="font-size: 15px; text-align: left;"> Exceeding (positive or negative values accepted)</li>
+          <li style="font-size: 15px; text-align: left;"> Machining depth</li>
+          <li style="font-size: 15px; text-align: left;"> Tool thickness %</li>
+          <li style="font-size: 15px; text-align: left;"> This is a non-changeable parameter indicating the detected groove width.</li>
+        </ol>
+      </div>
+      <p style="font-size: 15px; text-align: left;"><img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/BLIND_Profile.png" width="31" /> <u style="font-size: 17px; text-align: justify;"><span style="color:#0000ff;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down105" style="font-size: 15px">Blind profiles</a></span></u></p>
+      <div class="droptext" data-targetname="drop-down105" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)"><span> </span>
+        <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="200" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAINURER/blind.png" width="311" /></p>
+        <ol class="Decimal">
+          <li style="font-size: 15px; text-align: left;"> Approach Z value</li>
+          <li style="font-size: 15px; text-align: left;"> Maximum depth of passes</li>
+          <li style="font-size: 15px; text-align: left;"> Machining depth</li>
+          <li style="font-size: 15px; text-align: left;"> Tool thickness %</li>
+        </ol>
+      </div>
+      <p style="font-size: 15px; text-align: left;"><strong><u></u></strong></p>
+      <p style="font-size: 15px; text-align: left;"><strong><u>Extension to the raw :</u></strong> Automatically detects the height of the profile to be processed up to the raw part.</p>
+      <ol class="RoundSquare">
+        <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAW_EXTENSION_OFF.png" width="30" /> Extension to the raw deactivated</li>
+        <li style="font-size: 15px; text-align: left;"><img height="30" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/RAW_EXTENSION_TOP.png" width="30" /> Extension to the raw activated</li>
+      </ol>
+      <p style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><strong><u><strong><u></u></strong></u></strong><strong><u><strong><u>Rotation of the C axis by 180°</u></strong> :</u></strong> During a cut-groove operation, the head is always positioned outside the part by default to avoid collision problems. The direction can be reversed if necessary.</p>
+      <ol class="RoundSquare">
+        <li style="border-width: 1px 0px 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); border-left-style: initial; border-left-color: initial; border-right-style: initial; border-right-color: initial; border-bottom-style: initial; border-bottom-color: initial; line-height: 1.15; text-align: justify; font-size: 15px;"><img height="35" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/SCIER/REVERSE_DRILLING_DIRECTION.png" width="35" />Reversal of the motor axis</li>
+      </ol>
+    </div>
+    <ol class="RoundSquare">
+    </ol>
+    <p>After creating the automatic Cut-groove operation, it is possible to filter the geometries to be processed via the <a href="../../Machinings/EditSelection/Auto_groove/Auto_Groove.htm">machining entity of the automatic cut-groove</a>.</p>
+  </div>
+  <p> <img height="20" src="../../../../../assets/images/EXPANDER_HOVER_32_PNG.png" style="cursor: nwse-resize;" width="20" /><img height="20" id="Image_x0020_1372" src="../../../../../assets/images/image606.png" style="width: 15pt; height: 15pt;" width="20" /> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down91" href="#">Offcut</a></p>
+  <div class="droptext" data-targetname="drop-down91" style="font-size: 15px; text-align: justify;border-width: 1px;border-style: solid;border-color: #eeb428;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;background-color: rgba(238, 180, 40, 0.08)">
+    <p>The automatic machining entity &quot;Offcut&quot; allows to detect the reusable offcuts generated during the Nesting process and set in the <a href="../../../SWOOD_NESTING/BOARDS_LIBRARY/BOARDS_LIBRARY.htm#offcut_general_parameters">Boards Library</a>.<br /></p>
+    <h4>Available operations</h4>
+    <p>The following operations are available (depending on the tool selected):</p>
+    <ul class="Disc">
+      <li><img height="20" src="../../../../../assets/images/swStyleBlueu_PNG_DEPLACER_40_PNG.png" width="20" /> Move tool center.</li>
+      <li><img height="20" src="../../../../../assets/images/swStyleBlueu_PNG_CONTOURNER_40_PNG.png" width="20" /> Contour.</li>
+      <li><img height="20" src="../../../../../assets/images/swStyleBlueu_PNG_CONTOURNER_40_PNG.png" width="20" /> Partial contouring.</li>
+      <li><img height="20" src="../../../../../assets/SWOOD_RESOURCES/SWOOD CAM/MILLING/SCIER/SCIER_32_PNG.png" width="20" /> Saw.</li>
+    </ul>
+    <p> </p>
+    <h4>Specific parameters</h4>
+    <p>When using the &quot;Offcut&quot; machining, the specific offcut sorting parameter is available:</p>
+    <ul class="Disc">
+      <li><img height="41" src="../../../../../assets/images/image608.png" width="41" /> <b>Both offcuts</b>: Will take into account the two offcuts in the operation.</li>
+      <li><img height="41" src="../../../../../assets/images/image609.png" width="41" /> <b>First offcut</b>: Will take into account only the first offcut in the operation.</li>
+      <li><img height="41" src="../../../../../assets/images/image610.png" width="41" /> <b>Second offcut</b>: Will only take into account the second offcut (if there is one) in the operation.</li>
+    </ul>
+  </div>
+  <p> </p>
+  <p> </p>
+</body>
+</html>
