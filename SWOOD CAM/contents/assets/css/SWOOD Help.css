@@ -1,0 +1,290 @@
+/*Créé avec Adobe RoboHelp 2019.*/
+body {
+  color: #000000;
+  font-family: Eurostile;
+  font-size: 15px;
+}
+a.nounderline:link {
+  text-decoration: none;
+}
+a.vide {
+  color: #000000;
+  text-decoration: none;
+  font-size: 4px;
+}
+img.logo {
+  border-width: 0px;
+  box-shadow: 0px;
+  padding-top: 5px;
+}
+h1 {
+  font-size: 32px;
+  text-shadow: -1px -1px #0c0 1px 1px #060 -3px 0 4px #000;
+  color: #f0b502;
+  padding: 1px;
+  font-weight: lighter;
+  -moz-box-shadow: 2px 2px 6px #888;
+  -webkit-box-shadow: 2px 2px 6px #888;
+  box-shadow: 2px 2px 6px #888;
+  line-height: 60px;
+  background-color: #222222;
+}
+title {
+  font-size: 32px;
+  text-shadow: -1px -1px #0c0 1px 1px #060 -3px 0 4px #000;
+  color: #f0b502;
+  padding: 1px;
+  font-weight: lighter;
+  -moz-box-shadow: 2px 2px 6px #888;
+  -webkit-box-shadow: 2px 2px 6px #888;
+  box-shadow: 2px 2px 6px #888;
+  line-height: 60px;
+  background-color: #222222;
+}
+h3 {
+  font-size: 20px;
+  color: #f0b502;
+  padding: 2px;
+  font-weight: bold;
+  display: block;
+  margin: 2px;
+}
+table {
+  border-left-style: Solid;
+  border-left-width: 0px;
+  border-right-style: Solid;
+  border-right-width: 0px;
+  border-top-style: Solid;
+  border-top-width: 1px;
+  border-top-color: #f0b502;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-bottom-style: Solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #f0b502;
+}
+th {
+  font-weight: bold;
+  text-align: left;
+  border-bottom-style: Solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #f0b502;
+  vertical-align: Center;
+}
+img2 {
+  box-shadow: 0px 0px 5px #fff;
+  border-left-style: Solid;
+  border-left-width: 1px;
+  border-left-color: #f0b502;
+  border-right-style: Solid;
+  border-right-width: 1px;
+  border-right-color: #f0b502;
+  border-top-style: Solid;
+  border-top-width: 1px;
+  border-top-color: #f0b502;
+  border-bottom-style: Solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #f0b502;
+}
+#container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#content {
+  width: 50%;
+  background-color: #008000;
+}
+tr {
+  border-bottom-style: Solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #f0b502;
+}
+div.menu {
+  background-color: #c0c0c0;
+  width: 300px;
+  right: 25px;
+  top: 125px;
+  position: fixed;
+  display: block;
+  border-radius: 10px;
+}
+div.contains {
+  top: 200px;
+  margin-right: 100px;
+}
+ul.Disc {
+  list-style-type: disc;
+}
+ol.Decimal {
+  list-style-type: decimal;
+}
+ol.RoundSquare {
+  list-style: disc;
+}
+ol.RoundSquare>li>ol {
+  list-style: square;
+}
+ol.RoundSquare>li>ol>li>ol {
+  list-style: circle;
+}
+ol.RoundSquare>li>ol>li>ol>li>ol {
+  list-style: disc;
+}
+ol.RoundSquare>li>ol>li>ol>li>ol>li>ol {
+  list-style: square;
+}
+ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol {
+  list-style: circle;
+}
+span {
+  font-size: 15px;
+  font-style: ;
+  font-weight: ;
+  text-decoration: none;
+  text-align: justify;
+}
+h4 {
+  font-size: 16px;
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+}
+p.Signet {
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+ol.AlphaNumeric {
+  list-style: decimal;
+}
+ol.AlphaNumeric>li>ol {
+  list-style: lower-alpha;
+}
+ol.AlphaNumeric>li>ol>li>ol {
+  list-style: lower-roman;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 4px;
+  --list-indent: 40px;
+  counter-reset: item4;
+  list-style: none;
+  padding-left: var(--prefix-size);
+  margin-left: calc(var(--list-indent) - var(--prefix-size));
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 4px;
+  --list-indent: 40px;
+  position: relative;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li:before {
+  counter-increment: item4;
+  content: "(" counter(item4, decimal)")";
+  text-align: right;
+  position: absolute;
+  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
+  margin-right: var(--prefix-gap);
+  width: var(--prefix-size);
+  overflow: hidden;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol {
+  list-style: none;
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 4px;
+  --list-indent: 40px;
+  counter-reset: item5;
+  padding-left: var(--prefix-size);
+  margin-left: calc(var(--list-indent) - var(--prefix-size));
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li:before {
+  counter-increment: item5;
+  content: "(" counter(item5, lower-alpha)")";
+  text-align: right;
+  position: absolute;
+  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
+  margin-right: var(--prefix-gap);
+  width: var(--prefix-size);
+  overflow: hidden;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 4px;
+  --list-indent: 40px;
+  position: relative;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li>ol {
+  list-style: none;
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 4px;
+  --list-indent: 40px;
+  counter-reset: item6;
+  padding-left: var(--prefix-size);
+  margin-left: calc(var(--list-indent) - var(--prefix-size));
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
+  counter-increment: item6;
+  content: "(" counter(item6, lower-roman)")";
+  text-align: right;
+  position: absolute;
+  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
+  margin-right: var(--prefix-gap);
+  width: var(--prefix-size);
+  overflow: hidden;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li>ol>li {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 4px;
+  --list-indent: 40px;
+  position: relative;
+}
+strong {
+  line-height: 1;
+}
+ul.Circle {
+  list-style-type: circle;
+}
+ul.Square {
+  list-style-type: square;
+}
+a.nounderline {
+  font-size: 15px;
+  color: #000000;
+}
+:root {
+  --borderonly-theme-color: #bfbfbf;
+}
+table.borderonly {
+  border-collapse: collapse;
+}
+table.borderonly td {
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--borderonly-theme-color);
+}
+ol.LowerAlpha {
+  list-style: lower-alpha;
+}
+p {}
